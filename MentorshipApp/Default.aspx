@@ -37,7 +37,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
 }
     </style>
     <div class="jumbotron">
-        <h1>Tippie Tech Mentorship Application</h1>
+        <h1>Welcome to Tippie Tech!</h1>
         <p class="lead">The opportunities are endless.</p>
     </div>
     <p><a href="http://www.asp.net"> <button class="block">Check into a Meeting &raquo;</button></a></p>
