@@ -1,8 +1,7 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MentorAppFinal._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminProfile.aspx.cs" Inherits="MentorAppFinal.Admin_Profile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-       <style>
+<style>
  .block {
   display: block;
   width: 100%;
@@ -35,16 +34,16 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
   height: 100%;
   padding-bottom: 200px;
 }
-    </style> 
-    <div class="jumbotron">
+</style>
 
-        <h1>Welcome to Tippie Tech!</h1>
-        <p class="lead">The opportunities are endless.</p>
-    </div>
-    <p> <a href="/CheckIntoEvent" button class="block">Check into a Meeting &raquo;</a></p>
-    <p> <a href="/YourPoints" button class="block">Your Points &raquo;</a></p>
-    <p> <a href="/MeetYourTeam" button class="block">Meet your Team &raquo;</a></p>
-    <div class="row">
+    <h1>Welcome Administrator</h1>
+
+    <p> <a href="/MemberStanding" button class="block">Member Standing &raquo;</a></p>
+    <p> <a href="/MentorshipTeams" button class="block">Mentorship Teams &raquo;</a></p>
+    <p> <a href="/CreateEvent" button class="block">Create an Event &raquo;</a></p>
+    <p> <a href="/Administrators" button class="block">Administrator Rights &raquo;</a></p>
+
+<div class="row">
         <div class="col-md-8">
             <h2>Upcoming Events</h2>
             <p>
@@ -55,7 +54,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
          
         </div>
         <div class="col-md-4">
-            <h2>Check us out on Twitter</h2>
+            <h2>Twitter</h2>
             <div class="twitterContainer">
                 <a class="twitter-timeline" data-lang="en" data-theme="dark" data-height="300" href="https://twitter.com/TippieTECH?ref_src=twsrc%5Etfw">Tweets by TippieTECH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -63,5 +62,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
         </div>
        
     </div>
-
 </asp:Content>
+
+
+

@@ -10,6 +10,6 @@
 namespace MentorAppFinal {
     
     
-    public partial class _Default {
+    public partial class WebForm1 {
     }
 }
