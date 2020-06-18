@@ -2,41 +2,65 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+       <style>
+ .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #000000;
+  color: white;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.responsiveCal {
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+}
+ 
+.responsiveCal iframe {
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
+
+.twitterContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 200px;
+}
+    </style>
     <div class="jumbotron">
         <h1>Tippie Tech Mentorship Application</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p class="lead">The opportunities are endless.</p>
     </div>
-
+    <p><a href="http://www.asp.net"> <button class="block">Check into a Meeting &raquo;</button></a></p>
+    <p><a href="http://www.asp.net"> <button class="block">My Points &raquo;</button></a></p>
+    <p><a href="http://www.asp.net"> <button class="block">My Team &raquo;</button></a></p>
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
+        <div class="col-md-8">
+            <h2>Upcoming Events</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+            <div class="responsiveCal">
+                <iframe src="https://calendar.google.com/calendar/embed?src=tippietechnology%40gmail.com&ctz=America%2FChicago" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+            </div>
             </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
+         
         </div>
         <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
+            <h2>Check us out on Twitter</h2>
+            <div class="twitterContainer">
+                <a class="twitter-timeline" data-lang="en" data-theme="dark" data-height="300" href="https://twitter.com/TippieTECH?ref_src=twsrc%5Etfw">Tweets by TippieTECH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
         </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
+       
     </div>
 
 </asp:Content>
