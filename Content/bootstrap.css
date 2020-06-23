@@ -1264,27 +1264,27 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 14px;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 12px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 10px;
 }
 p {
   margin: 0 0 10px;
@@ -5032,15 +5032,20 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: #8fa7bf;
+    color: white;
+    font-family: 'Poppins',sans-serif;
 }
+
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+ 
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -5071,7 +5076,8 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 30px;
+    font-weight:700;
   }
 }
 .thumbnail {
