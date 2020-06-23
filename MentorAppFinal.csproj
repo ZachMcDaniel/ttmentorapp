@@ -190,6 +190,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <Content Include="Test.aspx" />
+    <Content Include="TestingHTML.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -444,6 +445,13 @@
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestingHTML.aspx.cs">
+      <DependentUpon>TestingHTML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestingHTML.aspx.designer.cs">
+      <DependentUpon>TestingHTML.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
