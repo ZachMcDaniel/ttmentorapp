@@ -5077,7 +5077,7 @@ a.badge:focus {
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 30px;
-    font-weight:700;
+    font-weight:700; 
   }
 }
 .thumbnail {
