@@ -63,9 +63,10 @@ strong {
 dfn {
   font-style: italic;
 }
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' >
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 13px;
+    margin: 0.67em 0;
 }
 mark {
   background: #ff0;
@@ -1294,6 +1295,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  color: white;
 }
 @media (min-width: 768px) {
   .lead {
@@ -5035,13 +5037,14 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+  background-color: #8fa7bf;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
-}
+  font-family: 'Poppins',sans-serif;
+  color: white;
+    }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -5055,6 +5058,7 @@ a.badge:focus {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
+  background-color: #8fa7bf;
 }
 .jumbotron .container {
   max-width: 100%;
