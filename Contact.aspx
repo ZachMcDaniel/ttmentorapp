@@ -12,23 +12,31 @@
      font-family: 'Poppins', sans-serif;
     }
     div.blocktext{
-     margin-left: auto;
-     margin-right: auto;
-     width: 20em;
-     border-left:hidden 2px;
-     background-color:#bfeaff;
+     width: 100%;
+     background-color:#f3f3f3;
+     align-content: center;
     
     }
+    .newBox {
+        width: 400px;
+        align-content: center;
+        
+    }
+
+    .box1 {
+        width: 300px;
+        height: 143px;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
 </style>
     <div class="jumbotron">
 
         <h1>Contact Us</h1>
     </div>
-    <h4>Questions about our mentorship program? Contact our Director of Internal Affairs:</h4>
 
-    <div class="blocktext">
-        <p><strong>Name:</strong> Yanni Mihalopoulos</p>
-        <p><strong>Email:</strong> <a href="mailto:yanni-mihalopoulos@uiowa.edu">yanni-mihalopoulos@uiowa.edu</a></p>
-    </div>
-</asp:Content>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRPvEii_YbCVJ4oyeA6QiE1r-iWL_zuM-Xs2TlGo1NBO90Ug/viewform?embedded=true" width="100%" height="900px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></asp:Content>
 

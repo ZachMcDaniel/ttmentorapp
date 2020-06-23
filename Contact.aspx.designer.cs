@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MentorAppFinal {
-    
-    
-    public partial class Contact {
+namespace MentorAppFinal
+{
+
+
+    public partial class Contact
+    {
     }
 }
