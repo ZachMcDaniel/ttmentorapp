@@ -10,6 +10,6 @@
 namespace MentorAppFinal {
     
     
-    public partial class Admin_Profile {
+    public partial class AdminProfile {
     }
 }

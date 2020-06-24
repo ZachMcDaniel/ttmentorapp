@@ -4,13 +4,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
-  margin: 0;
+    margin: 0;
 }
 article,
 aside,
@@ -1266,26 +1268,32 @@ h6 .small,
 h1,
 .h1 {
   font-size: 30px;
+  font-family: "Poppins", sans-serif;
 }
 h2,
 .h2 {
   font-size: 25px;
+  font-family: "Poppins", sans-serif;
 }
 h3,
 .h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 h4,
 .h4 {
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 h5,
 .h5 {
   font-size: 12px;
+  font-family: "Poppins", sans-serif;
 }
 h6,
 .h6 {
   font-size: 10px;
+  font-family: "Poppins", sans-serif;
 }
 p {
   margin: 0 0 10px;
@@ -1296,6 +1304,8 @@ p {
   font-weight: 300;
   line-height: 1.4;
   color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 @media (min-width: 768px) {
   .lead {
@@ -4667,11 +4677,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: #000;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4679,10 +4689,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: #000;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: #000;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -5034,35 +5044,26 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-<<<<<<< HEAD
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   background-color: #8fa7bf;
-=======
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    background-color: #8fa7bf;
-    color: white;
-    font-family: 'Poppins',sans-serif;
->>>>>>> nanchapa
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background-color: #8fa7bf;
+  color: white;
+  font-family: "Poppins",sans-serif;
 }
 
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 .jumbotron h1,
 .jumbotron .h1 {
-<<<<<<< HEAD
   color: inherit;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   color: white;
-    }
-=======
-  color: white;
-  font-family: 'Poppins',sans-serif;
- 
+  text-align: center;
 }
->>>>>>> nanchapa
+ 
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -6853,5 +6854,23 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+}
+.block:hover {
+    background-color: #ddd;
+    color: black;
 }
 /*# sourceMappingURL=bootstrap.css.map */

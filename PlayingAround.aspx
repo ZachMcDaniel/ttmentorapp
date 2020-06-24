@@ -1,15 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PlayingAround.aspx.cs" Inherits="MentorAppFinal.PlayingAround" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <style>
-    h1{
-     text-align: center; 
-     font-family: 'Poppins', sans-serif;
-    }
     h4{
      text-align: center;
-     font-family: 'Poppins', sans-serif;
     }
     div.blocktext{
      margin-left: auto;
