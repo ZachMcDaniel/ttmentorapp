@@ -10,12 +10,11 @@ using System.Data;
 
 namespace MentorAppFinal
 {
-    public partial class CheckIntoEvent : System.Web.UI.Page
+    public partial class CreateProfile : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection("Data Source=bais-mssql.database.windows.net; Initial Catalog=mentorapplication; Persist Security Info=True;User ID=mentorapp-app; Password=45tq246acXcgcQHaewiLOIumno2(8kjhPUGGlweMZrQNXlN; Connect Timeout=30; Encrypt=True; TrustServerCertificate=False; ApplicationIntent=ReadWrite; MultiSubnetFailover=False");
 
         public object Name { get; private set; }
-        
         public object Password { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -43,11 +42,12 @@ namespace MentorAppFinal
         }
 
 
+
         protected void ClearFields()
         {
+            ddlPosition.SelectedValue = "";
             txtName.Text = "";
             txtHawkID.Text = "";
-            txtPassword.Text = "";
         }
 
     }

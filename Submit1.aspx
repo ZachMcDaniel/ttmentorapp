@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckIntoEvent.aspx.cs" Inherits="MentorAppFinal.CheckIntoEvent" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Submit1.aspx.cs" Inherits="MentorAppFinal.Submit1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -72,37 +72,36 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
-
 </head>
 <body>
 <fieldset id="form1" runat="server" method="post" class="form-horizontal" defaultfocus="txtEmail1" defaultbutton="btnSubmit">
     <div class="jumbotron">
         <h1>Sign into Event</h1>
-    </div>
+        </div>
 
     <div class="form-group col-md-12">
         <label class="control-label col-sm-3">Name:</label>
         <div class="col-sm-5">
             <asp:TextBox ID="txtName" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
+        </div>
 
     <div class="form-group col-md-12">
         <label class="control-label col-sm-3">HawkID:</label>
         <div class="col-sm-5">
             <asp:TextBox ID="txtHawkID" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
+        </div>
 
     <div class="form-group col-md-12">
         <label class="control-label col-sm-3">Event Password:</label>
         <div class="col-sm-5">
-            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control txtbox"></asp:TextBox>
+        </div>
 
     <div class="form-group col-md-12">
         <label class="control-label col-sm-3">Select a file to upload:</label>
         <div class="col-sm-5">
         <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload">  
-    </div>
+        </div>
 
     <div class="form-group col-md-12">
         <div class="col-sm-3"></div>
