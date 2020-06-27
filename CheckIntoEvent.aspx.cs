@@ -15,7 +15,7 @@ namespace MentorAppFinal
         SqlConnection con = new SqlConnection("Data Source=bais-mssql.database.windows.net; Initial Catalog=mentorapplication; Persist Security Info=True;User ID=mentorapp-app; Password=45tq246acXcgcQHaewiLOIumno2(8kjhPUGGlweMZrQNXlN; Connect Timeout=30; Encrypt=True; TrustServerCertificate=False; ApplicationIntent=ReadWrite; MultiSubnetFailover=False");
 
         public object Name { get; private set; }
-        
+
         public object Password { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -40,16 +40,19 @@ namespace MentorAppFinal
                 ClearFields();
                 lblSubmit.Text = "Submitted";
             }
-        }
+            else
+            {
+                ErrorMessage.Text = result.Errors.FirstOrDefault();
+            }
 
 
-        protected void ClearFields()
-        {
-            txtName.Text = "";
-            txtHawkID.Text = "";
-            txtPassword.Text = "";
+            protected void ClearFields()
+            {
+                txtName.Text = "";
+                txtHawkID.Text = "";
+                txtPassword.Text = "";
+            }
+
         }
 
     }
-
-}

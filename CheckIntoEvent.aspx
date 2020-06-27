@@ -1,118 +1,41 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckIntoEvent.aspx.cs" Inherits="MentorAppFinal.CheckIntoEvent" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /*the container must be positioned relative:*/
-        .custom-select {
-            position: relative;
-            font-family: "Poppins", sans-serif;
-        }
-
-            .custom-select select {
-                display: none; /*hide original SELECT element:*/
-            }
-
-        .select-selected {
-            background-color: #8fa7bf;
-        }
-
-            /*style the arrow inside the select element:*/
-            .select-selected:after {
-                position: absolute;
-                content: "";
-                top: 10px;
-                right: 10px;
-                width: 0;
-                height: 0;
-                border: 6px solid transparent;
-                border-color: #fff transparent transparent transparent;
-            }
-
-            /*point the arrow upwards when the select box is open (active):*/
-            .select-selected.select-arrow-active:after {
-                border-color: transparent transparent #fff transparent;
-                top: 7px;
-            }
-
-        /*style the items (options), including the selected item:*/
-        .select-items div, .select-selected {
-            color: #ffff;
-            padding: 1px 16px;
-            border: 1px solid transparent;
-            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        /*style items (options):*/
-        .select-items {
-            position: absolute;
-            background-color: #8fa7bf;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 99;
-        }
-
-        /*hide the items when the select box is closed:*/
-        .select-hide {
-            display: none;
-        }
-
-        .select-items div:hover, .same-as-selected {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .poppins {
-            font-family: "Poppins", sans-serif;
-        }
-    </style>
-
-</head>
-<body>
 <fieldset id="form1" runat="server" method="post" class="form-horizontal" defaultfocus="txtEmail1" defaultbutton="btnSubmit">
     <div class="jumbotron">
         <h1>Sign into Event</h1>
     </div>
-
-    <div class="form-group col-md-12">
-        <label class="control-label col-sm-3">Name:</label>
-        <div class="col-sm-5">
-            <asp:TextBox ID="txtName" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
-
-    <div class="form-group col-md-12">
-        <label class="control-label col-sm-3">HawkID:</label>
-        <div class="col-sm-5">
-            <asp:TextBox ID="txtHawkID" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
-
-    <div class="form-group col-md-12">
-        <label class="control-label col-sm-3">Event Password:</label>
-        <div class="col-sm-5">
-            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control txtbox"></asp:TextBox>
-    </div>
-
-    <div class="form-group col-md-12">
-        <label class="control-label col-sm-3">Select a file to upload:</label>
-        <div class="col-sm-5">
-        <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload">  
-    </div>
-
-    <div class="form-group col-md-12">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-5">
+<br> <br />
+        <div>
+            <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
+                <asp:TextBox runat="server" ID="txtName" CssClass="form-control txtbox" TextMode="SingleLine" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
+                    CssClass="text-danger" ErrorMessage="The Name field is required." />
+            </div>
+<br> <br />
+        <div>
+            <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID:</asp:Label>
+                <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
+                    CssClass="text-danger" ErrorMessage="The HawkID field is required." />
+            </div>
+<br> <br />
+        <div>
+            <asp:Label runat="server" AssociatedControlID="txtPassword">Password:</asp:Label>
+                <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control txtbox" TextMode="SingleLine" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
+                    CssClass="text-danger" ErrorMessage="The Password field is required." />
+            </div>
+<br> <br />
+    <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px" />
         </div>
         <asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label>
     </div>
-
-    </fieldset>
+</fieldset>
 
     <script>
         var x, i, j, l, ll, selElmnt, a, b, c;
@@ -194,8 +117,5 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
     </script>
-
-</body>
-</html>
 
 </asp:Content>
