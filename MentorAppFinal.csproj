@@ -196,7 +196,6 @@
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Login.aspx" />
     <Content Include="MeetYourTeam.aspx" />
     <Content Include="MemberStanding.aspx" />
     <Content Include="MentorshipTeams.aspx" />
@@ -402,13 +401,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MeetYourTeam.aspx.cs">
       <DependentUpon>MeetYourTeam.aspx</DependentUpon>
