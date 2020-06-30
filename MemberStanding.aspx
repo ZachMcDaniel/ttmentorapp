@@ -28,6 +28,6 @@
     </asp:GridView>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Name,  CASE WHEN Position = 1 THEN 'Mentor' ELSE 'Mentee' END AS Position, HawkID
-FROM [Members]"></asp:SqlDataSource>
+FROM [USER]"></asp:SqlDataSource>
 
 </asp:Content>
