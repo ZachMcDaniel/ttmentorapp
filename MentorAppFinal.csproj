@@ -190,11 +190,13 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Maintenance\Default.aspx" />
     <Content Include="PlayingAround.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="TestingHTML.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
+    <Content Include="Maintenance\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="MeetYourTeam.aspx" />
     <Content Include="MemberStanding.aspx" />
@@ -401,6 +403,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maintenance\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="MeetYourTeam.aspx.cs">
       <DependentUpon>MeetYourTeam.aspx</DependentUpon>
