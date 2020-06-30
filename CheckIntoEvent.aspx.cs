@@ -42,11 +42,11 @@ namespace MentorAppFinal
             }
             else
             {
-                ErrorMessage.Text = result.Errors.FirstOrDefault();
+                //ErrorMessage.Text = result.Errors.FirstOrDefault();
             }
 
 
-
+        }
             protected void ClearFields()
             {
                 txtName.Text = "";
