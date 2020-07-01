@@ -5047,11 +5047,9 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  background-color: #8fa7bf;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  background-color: #8fa7bf;
   color: white;
   font-family: "Poppins",sans-serif;
 }
@@ -5077,7 +5075,6 @@ a.badge:focus {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
-  background-color: #8fa7bf;
 }
 .jumbotron .container {
   max-width: 100%;
@@ -6856,21 +6853,4 @@ button.close {
   }
 }
 
-.block {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #f3f3f3;
-    color: black;
-    padding: 14px 28px;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 8px;
-}
-.block:hover {
-    background-color: #ddd;
-    color: black;
-}
 /*# sourceMappingURL=bootstrap.css.map */

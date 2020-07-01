@@ -23,11 +23,11 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
     <div class="jumbotron">
         <h1>Welcome Administrator!</h1>
     </div>
+
     <p> <a href="/MemberStanding" button class="block">Member Standing &raquo;</a></p>
     <p> <a href="/MentorshipTeams" button class="block">Mentorship Teams &raquo;</a></p>
     <p> <a href="/CreateEvent" button class="block">Create an Event &raquo;</a></p>
     <p> <a href="/Administrators" button class="block">Administrator Rights &raquo;</a></p>
-
 <div class="row">
         <div class="col-md-8">
             <h3>Upcoming Events</h3>
