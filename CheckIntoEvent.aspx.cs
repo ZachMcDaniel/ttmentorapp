@@ -22,7 +22,7 @@ namespace MentorAppFinal
         {
             if (!IsPostBack)
             {
-                ClearFields();
+                ClearFields1();
             }
         }
 
@@ -37,7 +37,7 @@ namespace MentorAppFinal
                 cmd.CommandText = "Insert into SignIntoEvent Values('" + txtName.Text + "','" + txtHawkID.Text + "', '" + txtPassword.Text + "'); ";
                 cmd.ExecuteNonQuery();
                 con.Close();
-                ClearFields();
+                ClearFields1();
                 lblSubmit.Text = "Submitted";
             }
             else
@@ -45,15 +45,14 @@ namespace MentorAppFinal
                 //ErrorMessage.Text = result.Errors.FirstOrDefault();
             }
 
-
         }
-            protected void ClearFields()
-            {
-                txtName.Text = "";
-                txtHawkID.Text = "";
-                txtPassword.Text = "";
-            }
 
+        private void ClearFields1()
+        {
+            txtName.Text = "";
+            txtHawkID.Text = "";
+            txtPassword.Text = "";
         }
 
     }
+}

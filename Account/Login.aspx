@@ -21,6 +21,15 @@
                         </p>
                     </asp:PlaceHolder>
                     <div class="form-group">
+                        <asp:Label runat="server" CssClass="col-md-2 control-label">Organization</asp:Label>
+                        <div class="col-md-10">
+                        <asp:DropDownList ID="ddlOrganization" runat="server" CssClass="txtbox" Height="34px" Width="400px">
+                            <asp:ListItem Selected="True" Value="0">- Select Organization: -</asp:ListItem>
+                            <asp:ListItem Value="1">Tippie Tech</asp:ListItem>
+                        </asp:DropDownList>
+                        </div>
+                    <br> <br \ />
+                    <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />

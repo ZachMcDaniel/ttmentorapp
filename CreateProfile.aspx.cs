@@ -14,9 +14,11 @@ namespace MentorAppFinal
     public partial class CreateProfile : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection("Data Source=bais-mssql.database.windows.net; Initial Catalog=mentorapplication; Persist Security Info=True;User ID=mentorapp-app; Password=45tq246acXcgcQHaewiLOIumno2(8kjhPUGGlweMZrQNXlN; Connect Timeout=30; Encrypt=True; TrustServerCertificate=False; ApplicationIntent=ReadWrite; MultiSubnetFailover=False");
+        private object result;
 
         public object Name { get; private set; }
         public object Position { get; private set; }
+        public object ErrorMessage { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -112,4 +114,3 @@ namespace MentorAppFinal
     }
 
 }
-

@@ -13,10 +13,8 @@
     <div class="jumbotron">
         <h1>Create Profile</h1>
     </div>
-
     <div>
         <label>Position:</label>
-        <div>
             <asp:DropDownList ID="ddlPosition" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select mentor or mentee: -</asp:ListItem>
                 <asp:ListItem Value="1">Mentor</asp:ListItem>
@@ -58,11 +56,9 @@
 <br> <br \ />
     <div>
         <label>Hometown, State, Country:</label>
-        <div>
             <asp:TextBox ID="txtHometown" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
-    <div>
         <label>Pronouns:</label>
         <div>
             <asp:TextBox ID="txtPronouns" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
@@ -70,7 +66,6 @@
 <br> <br \ />
     <div>
         <label>Do you have a car on campus?</label>
-        <div>
             <asp:DropDownList ID="ddlTransportation" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Yes or No: -</asp:ListItem>
                 <asp:ListItem Value="1">Yes</asp:ListItem>
@@ -84,7 +79,6 @@
 <br> <br \ /> 
     <div>
         <label>Select Year in School:</label>
-        <div>
             <asp:DropDownList ID="ddlYear" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Year in School: -</asp:ListItem>
                 <asp:ListItem Value="1">First Year</asp:ListItem>
@@ -97,7 +91,6 @@
 <br> <br \ />
     <div>
         <label>Select Major:</label>
-        <div>
             <asp:DropDownList ID="ddlMajor" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Major: -</asp:ListItem>
                 <asp:ListItem Value="1">Pre-Business</asp:ListItem>
@@ -114,7 +107,6 @@
 <br> <br \ />
     <div>
         <label>Select Certificate:</label>
-        <div>
             <asp:DropDownList ID="ddlCertificate" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Certificate: -</asp:ListItem>
                 <asp:ListItem Value="1">Entrepreneurial Management Certificate</asp:ListItem>
@@ -128,13 +120,11 @@
 <br> <br \ />
     <div>
         <label>Enter Minor(s):</label>
-        <div>
             <asp:TextBox ID="txtMinors" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>Select GPA:</label>
-        <div>
             <asp:DropDownList ID="ddlGPA" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select GPA: -</asp:ListItem>
                 <asp:ListItem Value="1">1-1.5</asp:ListItem>
@@ -153,7 +143,6 @@
 <br> <br \ /> 
     <div>
         <label>Select Gender Identity:</label>
-        <div>
             <asp:DropDownList ID="ddlGender" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Gender Identity: -</asp:ListItem>
                 <asp:ListItem Value="1">Female</asp:ListItem>
@@ -166,7 +155,6 @@
 <br> <br \ />
     <div>
         <label>Select Race:</label>
-        <div>
             <asp:DropDownList ID="ddlRace" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Race: -</asp:ListItem>
                 <asp:ListItem Value="1">African American/Black</asp:ListItem>
@@ -183,7 +171,6 @@
 <br> <br \ />
     <div>
         <label>Select First-Generation:</label>
-        <div>
             <asp:DropDownList ID="ddlFirstGeneration" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Yes or No: -</asp:ListItem>
                 <asp:ListItem Value="1">Yes</asp:ListItem>
@@ -194,7 +181,6 @@
 <br> <br \ />
     <div>
         <label>Select Disabilities:</label>
-        <div>
             <asp:DropDownList ID="ddlDisabilities" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Yes or No: -</asp:ListItem>
                 <asp:ListItem Value="1">Yes</asp:ListItem>
@@ -205,7 +191,6 @@
 <br> <br \ />
     <div>
         <label>If yes, what type(s) of disabilities do you have?</label>
-        <div>
             <asp:DropDownList ID="ddlTypeDisabilities" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Type of Disbilities: -</asp:ListItem>
                 <asp:ListItem Value="1">Acquired/traumatic brain injury</asp:ListItem>
@@ -226,7 +211,6 @@
 <br> <br \ />
     <div>
         <label>Select Verteran Status:</label>
-        <div>
             <asp:DropDownList ID="ddlVeteran" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Veteran Status: -</asp:ListItem>
                 <asp:ListItem Value="1">I am currently serving</asp:ListItem>
@@ -236,7 +220,6 @@
             </asp:DropDownList>
     </div>
 <br> <br \ />
-    <div>
         <label>Other- Share anything else you would like for us to know about your identity:</label>
         <div>
             <asp:TextBox ID="txtOther" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
@@ -248,7 +231,6 @@
 <br> <br \ />
     <div>
         <label>Select Extrovert/Introvert:</label>
-        <div>
             <asp:DropDownList ID="ddlExtrovert" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Extrovert/Introvert: -</asp:ListItem>
                 <asp:ListItem Value="1">Strong Extrovert</asp:ListItem>
@@ -261,7 +243,6 @@
 <br> <br \ />
     <div>
         <label>Select Emotional/Logical:</label>
-        <div>
             <asp:DropDownList ID="ddlEmotional" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Emotional/Logical: -</asp:ListItem>
                 <asp:ListItem Value="1">Very Emotional</asp:ListItem>
@@ -274,7 +255,6 @@
 <br> <br \ />
     <div>
         <label>Select Leader/Follower:</label>
-        <div>
             <asp:DropDownList ID="ddlLeader" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Leader/Follower: -</asp:ListItem>
                 <asp:ListItem Value="1">Strong Leader</asp:ListItem>
@@ -287,7 +267,6 @@
 <br> <br \ />
     <div>
         <label>Select Detail/Visionary Oriented:</label>
-        <div>
             <asp:DropDownList ID="ddlDetail" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Detail/Visionary Oriented: -</asp:ListItem>
                 <asp:ListItem Value="1">Very Detail Oriented</asp:ListItem>
@@ -300,7 +279,6 @@
 <br> <br \ />
     <div>
         <label>Select Quiet/Busy Study Area:</label>
-        <div>
             <asp:DropDownList ID="ddlQuiet" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Quiet/Busy Study Area: -</asp:ListItem>
                 <asp:ListItem Value="1">Very Quiet Study Area</asp:ListItem>
@@ -313,7 +291,6 @@
 <br> <br \ />
     <div>
         <label>Select how your friends describe you:</label>
-        <div>
             <asp:DropDownList ID="ddlFriends" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select how your friends describe you: -</asp:ListItem>
                 <asp:ListItem Value="1">Quiet and Shy</asp:ListItem>
@@ -326,7 +303,6 @@
 <br> <br \ />
     <div>
         <label>Select interest in athletics/sports:</label>
-        <div>
             <asp:DropDownList ID="ddlAthletics" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select interest in athletics/sports: -</asp:ListItem>
                 <asp:ListItem Value="1">Yes</asp:ListItem>
@@ -337,7 +313,6 @@
 <br> <br \ />
     <div>
         <label>Select Favorite Games:</label>
-        <div>
             <asp:DropDownList ID="ddlGames" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Favorite Games: -</asp:ListItem>
                 <asp:ListItem Value="1">Sports Games</asp:ListItem>
@@ -351,7 +326,6 @@
 <br> <br \ />
     <div>
         <label>Select Favorite Music Genre:</label>
-        <div>
             <asp:DropDownList ID="ddlMusic" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Favorite Music Genre: -</asp:ListItem>
                 <asp:ListItem Value="1">Classical</asp:ListItem>
@@ -370,7 +344,6 @@
 <br> <br \ />
     <div>
         <label>Select the activity you would enjoy participating in the most with your mentor/mentee:</label>
-        <div>
             <asp:DropDownList ID="ddlActivity" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select the activity you would enjoy participating in the most with your mentor/mentee: -</asp:ListItem>
                 <asp:ListItem Value="1">Play sports/Attend sporting event</asp:ListItem>
@@ -384,7 +357,6 @@
 <br> <br \ />
     <div>
         <label>Select Favorite Type of Food:</label>
-        <div>
             <asp:DropDownList ID="ddlFood" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Favorite Type of Food: -</asp:ListItem>
                 <asp:ListItem Value="1">American</asp:ListItem>
@@ -400,7 +372,6 @@
 <br> <br \ />
     <div>
         <label>Select how much time you can invest in the mentorship program:</label>
-        <div>
             <asp:DropDownList ID="ddlTime" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select how much time you can invest in the mentorship program: -</asp:ListItem>
                 <asp:ListItem Value="1">1-5 hours per week</asp:ListItem>
@@ -411,7 +382,6 @@
 <br> <br \ />
     <div>
         <label>Select which academic opportunities outside of class interests you the most: </label>
-        <div>
             <asp:DropDownList ID="ddlOpportunity" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select what academic opportunities outside of class interests you the most: -</asp:ListItem>
                 <asp:ListItem Value="1">Research Opportunities</asp:ListItem>
@@ -424,7 +394,6 @@
 <br> <br \ />
     <div>
         <label>Select how many hours you study each week: </label>
-        <div>
             <asp:DropDownList ID="ddlHours" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select how many hours you study each week: -</asp:ListItem>
                 <asp:ListItem Value="1">1-5 hours per week</asp:ListItem>
@@ -437,7 +406,6 @@
 <br> <br \ />
     <div>
         <label>Select Study/Social: </label>
-        <div>
             <asp:DropDownList ID="ddlStudy" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Study/Social: -</asp:ListItem>
                 <asp:ListItem Value="1">Very School Driven</asp:ListItem>
@@ -450,7 +418,6 @@
 <br> <br \ />
     <div>
         <label>Select Study Time: </label>
-        <div>
             <asp:DropDownList ID="ddlStudyTime" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Study Time: -</asp:ListItem>
                 <asp:ListItem Value="1">Morning</asp:ListItem>
@@ -465,7 +432,6 @@
 <br> <br \ />
     <div>
         <label>Have you had an internship experience? </label>
-        <div>
             <asp:DropDownList ID="ddlInternship" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Yes or No -</asp:ListItem>
                 <asp:ListItem Value="1">Yes</asp:ListItem>
@@ -475,19 +441,16 @@
 <br> <br \ />
     <div>
         <label>If yes, where did you intern and what was your job title?</label>
-        <div>
             <asp:TextBox ID="txtWhere" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ /> 
     <div>
         <label>What is your dream job?</label>
-        <div>
             <asp:TextBox ID="txtDream" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ /> 
     <div>
         <label>What kind of company would you most like to work for?</label>
-        <div>
             <asp:DropDownList ID="ddlCompany" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select kind of company: -</asp:ListItem>
                 <asp:ListItem Value="1">Large Company</asp:ListItem>
@@ -498,7 +461,6 @@
 <br> <br \ />
     <div>
         <label>What industry is most interesting to you?</label>
-        <div>
             <asp:DropDownList ID="ddlIndustry" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select the Industry: -</asp:ListItem>
                 <asp:ListItem Value="1">Education</asp:ListItem>
@@ -519,37 +481,31 @@
 <br> <br \ />
     <div>
         <label>What are your hobbies/interests?</label>
-        <div>
             <asp:TextBox ID="txtHobby" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>Why did you join Tippie Tech?</label>
-        <div>
             <asp:TextBox ID="txtWhy" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>What would you like to get out of the Tippie Tech mentorship program?</label>
-        <div>
             <asp:TextBox ID="txtProgram" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>Why did you choose your major?</label>
-        <div>
             <asp:TextBox ID="txtChoose" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>What other student organizations are you involved in?</label>
-        <div>
             <asp:TextBox ID="txtOrgs" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
     <div>
         <label>What can Tippie Tech do to ensure your personal success?</label>
-        <div>
             <asp:TextBox ID="txtSuccess" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
         </div>
 <br> <br \ />
