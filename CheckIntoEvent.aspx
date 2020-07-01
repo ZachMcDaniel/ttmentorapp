@@ -6,7 +6,7 @@
 
 <fieldset id="form1" runat="server" method="post" class="form-horizontal" defaultfocus="txtEmail1" defaultbutton="btnSubmit">
     <div class="jumbotron">
-        <h1>Sign into Event</h1>
+        <h1>Check into Event</h1>
     </div>
 <br> <br />
         <div>
