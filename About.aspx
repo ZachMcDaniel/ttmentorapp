@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="About Us" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="MentorAppFinal.About" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <style>
         h1{
             text-align: center; 
