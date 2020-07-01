@@ -18,7 +18,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
   overflow: hidden;
   width: 100%;
   height: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
 }
     </style> 
     <div class="jumbotron">
@@ -44,6 +44,12 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
             <div class="twitterContainer">
                 <a class="twitter-timeline" data-lang="en" data-theme="dark" data-height="300" href="https://twitter.com/TippieTECH?ref_src=twsrc%5Etfw">Tweets by TippieTECH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+            <div>
+            <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/05/Anna-Holly-768x512.jpg" style="width:100%" />
+        
+            </div>
+       </div>
+    </div>
 
         </div>
        
