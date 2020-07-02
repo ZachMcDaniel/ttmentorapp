@@ -34,7 +34,7 @@ namespace MentorAppFinal
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Insert into SignIntoEvent Values('" + txtName.Text + "','" + txtHawkID.Text + "', '" + txtPassword.Text + "'); ";
+                cmd.CommandText = "Insert into SignIntoEvent Values('" + txtName.Text + "','" + txtHawkID.Text + "', '" + txtMeetingCode.Text + "'); ";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 ClearFields1();
@@ -51,7 +51,7 @@ namespace MentorAppFinal
         {
             txtName.Text = "";
             txtHawkID.Text = "";
-            txtPassword.Text = "";
+            txtMeetingCode.Text = "";
         }
 
     }

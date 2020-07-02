@@ -11,10 +11,10 @@
     <h2>Add Event Details:</h2>
 <br> <br />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtID">Event ID:</asp:Label>
-                <asp:TextBox runat="server" ID="txtID" CssClass="form-control txtbox" TextMode="SingleLine" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtID"
-                    CssClass="text-danger" ErrorMessage="The event ID field is required." />
+            <asp:Label runat="server" AssociatedControlID="txtMeetingCode">Meeting Code:</asp:Label>
+                <asp:TextBox runat="server" ID="txtMeetingCode" CssClass="form-control txtbox" TextMode="SingleLine" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtMeetingCode"
+                    CssClass="text-danger" ErrorMessage="The meeting code field is required." />
             </div>
 <br> <br />
         <div>

@@ -20,6 +20,9 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
   padding-bottom: 200px;
 }
 </style>
+
+<asp:LoginView runat="server">                            <RoleGroups>                                <asp:RoleGroup Roles="admin">                                    <ContentTemplate>                                             <a runat="server" href="~/Maintenance">Maintenance</a>                                        </ContentTemplate>                                    </asp:RoleGroup>                                </RoleGroups>                                 </asp:LoginView>
+
     <div class="jumbotron">
         <h1>Welcome Administrator!</h1>
     </div>

@@ -24,10 +24,10 @@
             </div>
 <br> <br />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtPassword">Password:</asp:Label>
-                <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control txtbox" TextMode="SingleLine" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
-                    CssClass="text-danger" ErrorMessage="The Password field is required." />
+            <asp:Label runat="server" AssociatedControlID="txtMeetingCode">Meeting Code:</asp:Label>
+                <asp:TextBox runat="server" ID="txtMeetingCode" CssClass="form-control txtbox" TextMode="SingleLine" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtMeetingCode"
+                    CssClass="text-danger" ErrorMessage="The meeting code field is required." />
             </div>
 <br> <br />
     <div>
