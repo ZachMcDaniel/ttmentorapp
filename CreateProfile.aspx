@@ -27,14 +27,14 @@
 </div>
 <br> <br \ />  
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="txtName">Name (First and Last):</asp:Label>
                 <asp:TextBox runat="server" ID="txtName" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
                     CssClass="text-danger" ErrorMessage="The Name field is required." />
             </div>
 <br> <br \ />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="txtHawkID">StudentID (numbers):</asp:Label>
                 <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
                     CssClass="text-danger" ErrorMessage="The HawkID field is required." />
@@ -154,7 +154,7 @@
     </div>
 <br> <br \ />
     <div>
-        <label>Select Race:</label>
+        <label>Select Race/Ethnicity:</label>
             <asp:DropDownList ID="ddlRace" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select Race: -</asp:ListItem>
                 <asp:ListItem Value="1">African American/Black</asp:ListItem>
