@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
-
+using Microsoft.AspNet.Identity;
 
 namespace MentorAppFinal
 {
@@ -33,6 +33,10 @@ namespace MentorAppFinal
 
             if (Page.IsValid)
             {
+                var userID = User.Identity.GetUserId();
+
+                string user = Convert.ToString(userID);
+
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
