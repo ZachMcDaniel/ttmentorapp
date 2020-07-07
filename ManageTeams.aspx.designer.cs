@@ -11,7 +11,7 @@ namespace MentorAppFinal
 {
 
 
-    public partial class MeetYourTeam
+    public partial class WebForm1
     {
 
         /// <summary>

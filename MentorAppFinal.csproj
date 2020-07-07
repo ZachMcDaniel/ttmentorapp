@@ -187,13 +187,13 @@
     <Content Include="PlayingAround.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="TestingHTML.aspx" />
+    <Content Include="ManageTeams.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
     <Content Include="Maintenance\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="MeetYourTeam.aspx" />
     <Content Include="MemberStanding.aspx" />
-    <Content Include="MentorshipTeams.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -418,13 +418,6 @@
     <Compile Include="MemberStanding.aspx.designer.cs">
       <DependentUpon>MemberStanding.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MentorshipTeams.aspx.cs">
-      <DependentUpon>MentorshipTeams.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MentorshipTeams.aspx.designer.cs">
-      <DependentUpon>MentorshipTeams.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="PlayingAround.aspx.cs">
       <DependentUpon>PlayingAround.aspx</DependentUpon>
@@ -469,6 +462,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTeams.aspx.cs">
+      <DependentUpon>ManageTeams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageTeams.aspx.designer.cs">
+      <DependentUpon>ManageTeams.aspx</DependentUpon>
     </Compile>
     <Compile Include="YourAccount.aspx.cs">
       <DependentUpon>YourAccount.aspx</DependentUpon>
