@@ -12,12 +12,16 @@
                                  </asp:LoginView>
     <h1>Manage Teams</h1>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
+
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
         <Columns>
-            <asp:BoundField DataField="HawkID" HeaderText="HawkID" SortExpression="HawkID" />
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" />
-            <asp:BoundField DataField="Team_ID" HeaderText="Team_ID" SortExpression="Team_ID" />
+            <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
+            <asp:BoundField DataField="TeamNumber" HeaderText="TeamNumber" SortExpression="TeamNumber" />
+      
+    
+    
             <asp:TemplateField>
         <ItemTemplate>
            <asp:LinkButton ID="btnedit" runat="server" CommandName="Edit" Text="Edit"/>                 
@@ -29,8 +33,7 @@
         </asp:TemplateField> 
         </Columns>
     </asp:GridView>
-
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [TEAM]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Year], [TeamNumber] FROM [Members]"></asp:SqlDataSource>
 
 
 

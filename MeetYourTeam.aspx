@@ -3,11 +3,15 @@
     <h1>Meet Your Team</h1>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
         <Columns>
-            <asp:BoundField DataField="HawkID" HeaderText="HawkID" SortExpression="HawkID" />
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" />
-            <asp:BoundField DataField="Team_ID" HeaderText="Team_ID" SortExpression="Team_ID" />
+            <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            <asp:BoundField DataField="Pronouns" HeaderText="Pronouns" SortExpression="Pronouns" />
+            <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
+            <asp:BoundField DataField="Majors" HeaderText="Majors" SortExpression="Majors" />
+            <asp:BoundField DataField="TeamNumber" HeaderText="TeamNumber" SortExpression="TeamNumber" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [TEAM]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Phone], [Email], [Pronouns], [Year], [Majors], [TeamNumber] FROM [Members]"></asp:SqlDataSource>
 </asp:Content>
