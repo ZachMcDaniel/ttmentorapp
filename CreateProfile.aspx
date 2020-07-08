@@ -381,6 +381,18 @@
     </div>
 <br> <br \ />
     <div>
+        <label>Select caution with covid:</label>
+            <asp:DropDownList ID="ddlCovid" runat="server" CssClass="txtbox" Height="34px" Width="400px">
+                <asp:ListItem Selected="True" Value="0">- Select caution with covid: -</asp:ListItem>
+                <asp:ListItem Value="1">Very Cautious</asp:ListItem>
+                <asp:ListItem Value="2">Somewhat Cautious</asp:ListItem>
+                <asp:ListItem Value="3">Neutral</asp:ListItem>
+                <asp:ListItem Value="4">Somewhat Carefree</asp:ListItem>
+                <asp:ListItem Value="5">Very Carefree</asp:ListItem>
+            </asp:DropDownList>
+    </div>
+<br> <br \ />
+    <div>
         <label>Select which academic opportunities outside of class interests you the most: </label>
             <asp:DropDownList ID="ddlOpportunity" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select what academic opportunities outside of class interests you the most: -</asp:ListItem>

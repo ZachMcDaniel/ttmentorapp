@@ -33,9 +33,6 @@ namespace MentorAppFinal
 
             if (Page.IsValid)
             {
-                var userID = User.Identity.GetUserId();
-
-                string user = Convert.ToString(userID);
 
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
@@ -47,7 +44,7 @@ namespace MentorAppFinal
                     ddlDisabilities.SelectedValue + "', '" + ddlTypeDisabilities.SelectedValue + "', '" + ddlVeteran.SelectedValue + "', '" + txtOther.Text + "', '" +
                     ddlExtrovert.SelectedValue + "', '" + ddlEmotional.SelectedValue + "', '" + ddlLeader.SelectedValue + "', '" + ddlDetail.SelectedValue + "', '" +
                     ddlQuiet.SelectedValue + "', '" + ddlFriends.SelectedValue + "', '" + ddlAthletics.SelectedValue + "', '" + ddlGames.SelectedValue + "', '" +
-                    ddlMusic.SelectedValue + "', '" + ddlActivity.SelectedValue + "', '" + ddlFood.SelectedValue + "', '" + ddlTime.SelectedValue + "', '" +
+                    ddlMusic.SelectedValue + "', '" + ddlActivity.SelectedValue + "', '" + ddlFood.SelectedValue + "', '" + ddlTime.SelectedValue + "', '" + ddlCovid.SelectedValue + "', '" +
                     ddlOpportunity.SelectedValue + "', '" + ddlHours.SelectedValue + "', '" + ddlStudy.SelectedValue + "', '" + ddlStudyTime.SelectedValue + "', '" +
                     ddlInternship.SelectedValue + "', '" + txtWhere.Text + "', '" + txtDream.Text + "', '" + ddlCompany.SelectedValue + "', '" + ddlIndustry.SelectedValue + "', '" +
                     txtHobby.Text + "', '" + txtWhy.Text + "', '" + txtProgram.Text + "', '" + txtChoose.Text + "', '" + txtOrgs.Text + "', '" + txtSuccess.Text + "')";
@@ -98,6 +95,7 @@ namespace MentorAppFinal
             ddlActivity.SelectedValue = "";
             ddlFood.SelectedValue = "";
             ddlTime.SelectedValue = "";
+            ddlCovid.SelectedValue = "";
             ddlOpportunity.SelectedValue = "";
             ddlHours.SelectedValue = "";
             ddlStudy.SelectedValue = "";

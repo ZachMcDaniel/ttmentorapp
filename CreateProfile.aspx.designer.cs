@@ -312,6 +312,15 @@ namespace MentorAppFinal
         protected global::System.Web.UI.WebControls.DropDownList ddlTime;
 
         /// <summary>
+        /// ddlCovid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCovid;
+
+        /// <summary>
         /// ddlOpportunity control.
         /// </summary>
         /// <remarks>
