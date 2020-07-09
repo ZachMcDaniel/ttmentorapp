@@ -31,7 +31,7 @@ namespace MentorAppFinal
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Insert into EVENT Values('" + txtMeetingCode.Text + "','" + txtTitle.Text + "','" + txtPoint.Text + "','" + txtDate.Text + "', '" + txtStartTime.Text + "', '" + txtEndTime.Text + "', '" + txtLocation.Text + "', '" + txtMore.Text + "'); ";
+                cmd.CommandText = "Insert into EVENT Values('" + txtMeetingCode.Text + "','" + txtTitle.Text + "','" + intPoint.Text + "','" + txtDate.Text + "', '" + txtStartTime.Text + "', '" + txtEndTime.Text + "', '" + txtLocation.Text + "', '" + txtMore.Text + "'); ";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 ClearFields1();
@@ -48,7 +48,7 @@ namespace MentorAppFinal
         {
             txtMeetingCode.Text = "";
             txtTitle.Text = "";
-            txtPoint.Text = "";
+            intPoint.Text = "";
             txtDate.Text = "";
             txtStartTime.Text = "";
             txtEndTime.Text = "";

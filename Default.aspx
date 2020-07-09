@@ -26,6 +26,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
         <h1>TippieTech Mentorship</h1>
         <p class="lead">The opportunities are endless.</p>
     </div>
+    <p> <a href="/CreateProfile" button class="block">Create Profile &raquo;</a></p>
     <p> <a href="/CheckIntoEvent" button class="block">Check into Event &raquo;</a></p>
     <p> <a href="/YourPoints" button class="block">Your Points &raquo;</a></p>
     <p> <a href="/MeetYourTeam" button class="block">Meet your Team &raquo;</a></p>
