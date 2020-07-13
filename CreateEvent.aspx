@@ -25,9 +25,9 @@
             </div>
 <br> <br />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtPoint">Event Point Value:</asp:Label>
-                <asp:TextBox runat="server" ID="txtPoint" CssClass="form-control txtbox" TextMode="SingleLine" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtPoint"
+            <asp:Label runat="server" AssociatedControlID="intPoint">Event Point Value:</asp:Label>
+                <asp:TextBox runat="server" ID="intPoint" CssClass="form-control txtbox" TextMode="Number" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="intPoint"
                     CssClass="text-danger" ErrorMessage="The point field is required." />
             </div>
 <br> <br />

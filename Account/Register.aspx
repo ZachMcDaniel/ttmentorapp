@@ -53,7 +53,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <p> <a runat="server" href="/CreateProfile" button class="block">Register &raquo;</a></p>
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
     </div>

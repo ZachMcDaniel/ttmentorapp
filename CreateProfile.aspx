@@ -523,7 +523,6 @@
 <br> <br \ />
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px"/>
-        </div>
         <asp:label ID="lblSubmit" runat="server"> </asp:label>
     </div>
 
