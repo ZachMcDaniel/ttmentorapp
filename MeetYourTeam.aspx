@@ -13,5 +13,5 @@
             <asp:BoundField DataField="TeamNumber" HeaderText="TeamNumber" SortExpression="TeamNumber" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Phone], [Email], [Pronouns], [Year], [Majors], [TeamNumber] FROM [Members]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Phone], [Email], [Pronouns], [Year], [Majors], [TeamNumber] FROM [Members]" </asp:SqlDataSource>
 </asp:Content>
