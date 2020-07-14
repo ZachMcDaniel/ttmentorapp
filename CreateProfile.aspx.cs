@@ -33,6 +33,9 @@ namespace MentorAppFinal
 
             if (Page.IsValid)
             {
+                var userID = User.Identity.GetUserId();
+
+                string user = Convert.ToString(userID);
 
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
@@ -47,7 +50,7 @@ namespace MentorAppFinal
                     ddlMusic.SelectedValue + "', '" + ddlActivity.SelectedValue + "', '" + ddlFood.SelectedValue + "', '" + ddlTime.SelectedValue + "', '" + ddlCovid.SelectedValue + "', '" +
                     ddlOpportunity.SelectedValue + "', '" + ddlHours.SelectedValue + "', '" + ddlStudy.SelectedValue + "', '" + ddlStudyTime.SelectedValue + "', '" +
                     ddlInternship.SelectedValue + "', '" + txtWhere.Text + "', '" + txtDream.Text + "', '" + ddlCompany.SelectedValue + "', '" + ddlIndustry.SelectedValue + "', '" +
-                    txtHobby.Text + "', '" + txtWhy.Text + "', '" + txtProgram.Text + "', '" + txtChoose.Text + "', '" + txtOrgs.Text + "', '" + txtSuccess.Text + "', '" + null + "')";
+                    txtHobby.Text + "', '" + txtWhy.Text + "', '" + txtProgram.Text + "', '" + txtChoose.Text + "', '" + txtOrgs.Text + "', '" + txtSuccess.Text + "', '" + null + "', '" + user + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 ClearFields();
