@@ -183,6 +183,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Images\AnnaUse.jpg" />
+    <Content Include="Images\FavIcon.png" />
     <Content Include="Maintenance\Default.aspx" />
     <Content Include="PlayingAround.aspx" />
     <Content Include="Test.aspx" />

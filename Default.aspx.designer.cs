@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MentorAppFinal {
-    
-    
-    public partial class _Default {
+namespace MentorAppFinal
+{
+
+
+    public partial class _Default
+    {
     }
 }
