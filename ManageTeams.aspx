@@ -12,19 +12,22 @@
                                  </asp:LoginView>
     <h1>Manage Teams</h1>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
         <Columns>
-            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-            <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" />
-            <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
-            <asp:BoundField DataField="Majors" HeaderText="Majors" SortExpression="Majors" />
+            
+            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" ReadOnly="True"/>
+            <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" ReadOnly="True"/>
+            <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" ReadOnly="True"/>
+            <asp:BoundField DataField="Majors" HeaderText="Majors" SortExpression="Majors" ReadOnly="True"/>
             <asp:BoundField DataField="TeamNumber" HeaderText="TeamNumber" SortExpression="TeamNumber" />
-            <asp:CommandField ShowEditButton="True" />
+            <asp:CommandField EditText="Edit Team" ShowEditButton="True" SortExpression="TeamNumber" />
         </Columns>
     </asp:GridView>
-   
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], CASE WHEN Position = 1 THEN 'Mentor' ELSE 'Mentee' END AS Position, [Year], [Majors], [TeamNumber] FROM [Members]" UpdateCommand="UPDATE [Members] SET [Name] = @Name, [Position] = @Position, [Phone] = @Phone, [Email] = @Email, [Pronouns] = @Pronouns, [Majors] = @Majors, [TeamNumber] = @TeamNumber"</asp:SqlDataSource>
-   
-
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Year], [Majors], [TeamNumber] FROM [Members]" 
+            UpdateCommand="UPDATE [Members] SET [TeamNumber] = @TeamNumber WHERE Name=@Name">
+            <UpdateParameters>
+            <asp:Parameter Name="TeamNumber" Type="String" />
+            </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>
