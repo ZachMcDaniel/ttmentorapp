@@ -13,14 +13,14 @@
             <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
                 <asp:TextBox runat="server" ID="txtName" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
-                    CssClass="text-danger" ErrorMessage="The Name field is required." />
+                    CssClass="text-danger" ErrorMessage="The name field is required." />
             </div>
 <br> <br />
         <div>
             <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID:</asp:Label>
                 <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
-                    CssClass="text-danger" ErrorMessage="The HawkID field is required." />
+                    CssClass="text-danger" ErrorMessage="The hawkID field is required." />
             </div>
 <br> <br />
         <div>
