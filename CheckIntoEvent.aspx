@@ -8,6 +8,7 @@
     <div class="jumbotron">
         <h1>Check into Event</h1>
     </div>
+        <h1><asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label></h1>
 <br> <br />
         <div>
             <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
@@ -33,7 +34,6 @@
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px" />
         </div>
-        <asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label>
     </div>
 </fieldset>
 

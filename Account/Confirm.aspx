@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="Account Confirmation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Confirm.aspx.cs" Inherits="MentorAppFinal.Account.Confirm" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
-
+    <div class="jumbotron">
+        <h1>Confirm Account</h1>
+    </div>
     <div>
         <asp:PlaceHolder runat="server" ID="successPanel" ViewStateMode="Disabled" Visible="true">
             <p>

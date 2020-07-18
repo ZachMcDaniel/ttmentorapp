@@ -54,6 +54,7 @@ namespace MentorAppFinal.Account
                 if (HasPassword(manager))
                 {
                     ChangePassword.Visible = true;
+                    ForgotPassword.Visible = true;
                 }
                 else
                 {

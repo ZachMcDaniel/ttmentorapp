@@ -7,6 +7,7 @@
     <div class="jumbotron">
         <h1>Create an Event</h1>
     </div>
+        <h1><asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label></h1>
 <br> <br />
     <h2>Add Event Details:</h2>
 <br> <br />
@@ -58,7 +59,6 @@
 <br> <br />
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px" />
-        <asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label>
     </div>
 </fieldset>
 

@@ -38,7 +38,7 @@ namespace MentorAppFinal
                 cmd.ExecuteNonQuery();
                 con.Close();
                 ClearFields1();
-                lblSubmit.Text = "Submitted";
+                lblSubmit.Text = "Submitted!";
             }
             else
             {
