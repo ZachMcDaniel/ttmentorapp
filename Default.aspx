@@ -49,8 +49,8 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
             <div class="twitterContainer">
                 <a class="twitter-timeline" data-lang="en" data-theme="dark" data-height="300" href="https://twitter.com/TippieTECH?ref_src=twsrc%5Etfw">Tweets by TippieTECH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+
             <div>
-           
             <img src="Images/FavIcon.png" style="width:100%"/>
             </div>
        </div>

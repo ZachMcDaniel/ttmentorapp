@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="Phone Number" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddPhoneNumber.aspx.cs" Inherits="MentorAppFinal.Account.AddPhoneNumber" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-
+    <div class="jumbotron">
+        <h1>Confirm Account</h1>
+    </div>
     <div class="form-horizontal">
         <h4>Add a phone number</h4>
         <hr />

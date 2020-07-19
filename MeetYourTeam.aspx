@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Meet Your Team" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MeetYourTeam.aspx.cs" Inherits="MentorAppFinal.MeetYourTeam" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Meet Your Team</h1>
+    <div class="jumbotron">
+        <h1>Meet Your Team</h1>
+    </div>
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
         <Columns>
