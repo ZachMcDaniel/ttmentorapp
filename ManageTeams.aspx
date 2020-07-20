@@ -13,7 +13,7 @@
     <div class="jumbotron">
         <h1>Manage Teams</h1>
     </div>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
+    <asp:GridView ID="GridView1" DataKeyNames="Name" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
         <Columns>
             
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" ReadOnly="True"/>
@@ -26,9 +26,11 @@
     </asp:GridView>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [Name], [Position], [Year], [Majors], [TeamNumber] FROM [Members]" 
-            UpdateCommand="UPDATE [Members] SET [TeamNumber] = @TeamNumber WHERE Name=@Name">
+            UpdateCommand="UPDATE [Members] SET [TeamNumber] = @TeamNumber WHERE [Name] = @original_Name"
+            OldValuesParameterFormatString="original_{0}">
             <UpdateParameters>
             <asp:Parameter Name="TeamNumber" Type="String" />
+            <asp:Parameter Name="original_Name" Type="String" />
             </UpdateParameters>
     </asp:SqlDataSource>
 </asp:Content>
