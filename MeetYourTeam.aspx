@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="Meet Your Team" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MeetYourTeam.aspx.cs" Inherits="MentorAppFinal.MeetYourTeam" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <div class="jumbotron">
         <h1>Meet Your Team</h1>
     </div>
