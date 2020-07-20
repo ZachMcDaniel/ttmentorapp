@@ -34,17 +34,17 @@
 <br> <br />
     <div>
         <label>Event Date:</label>
-        <asp:TextBox ID="txtDate" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtDate" runat="server" CssClass="form-control txtbox" TextMode="Date" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
         <label>Event Start Time:</label>
-        <asp:TextBox ID="txtStartTime" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtStartTime" runat="server" CssClass="form-control txtbox" TextMode="Time" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
         <label>Event End Time:</label>
-        <asp:TextBox ID="txtEndTime" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtEndTime" runat="server" CssClass="form-control txtbox" TextMode="Time" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
