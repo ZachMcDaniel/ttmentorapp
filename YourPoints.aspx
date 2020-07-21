@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="Your Points" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="YourPoints.aspx.cs" Inherits="MentorAppFinal.YourPoints" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<h1>Your Points</h1>
+
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <div class="jumbotron">
+        <h1>Your Points</h1>
+    </div>
 
     <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" Width="80%"></asp:GridView>
 

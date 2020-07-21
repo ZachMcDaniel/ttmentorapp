@@ -24,6 +24,15 @@ namespace MentorAppFinal
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl form1;
 
         /// <summary>
+        /// lblSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSubmit;
+
+        /// <summary>
         /// txtMeetingCode control.
         /// </summary>
         /// <remarks>
@@ -103,14 +112,5 @@ namespace MentorAppFinal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnSubmit;
-
-        /// <summary>
-        /// lblSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSubmit;
     }
 }

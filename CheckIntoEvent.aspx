@@ -8,19 +8,20 @@
     <div class="jumbotron">
         <h1>Check into Event</h1>
     </div>
+        <h1><asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label></h1>
 <br> <br />
         <div>
             <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
                 <asp:TextBox runat="server" ID="txtName" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
-                    CssClass="text-danger" ErrorMessage="The Name field is required." />
+                    CssClass="text-danger" ErrorMessage="The name field is required." />
             </div>
 <br> <br />
         <div>
             <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID:</asp:Label>
                 <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
-                    CssClass="text-danger" ErrorMessage="The HawkID field is required." />
+                    CssClass="text-danger" ErrorMessage="The hawkID field is required." />
             </div>
 <br> <br />
         <div>
@@ -33,7 +34,6 @@
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px" />
         </div>
-        <asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label>
     </div>
 </fieldset>
 

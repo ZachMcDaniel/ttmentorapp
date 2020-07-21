@@ -14,6 +14,8 @@
         <h1>Create Profile</h1>
     </div>
     <div>
+        <h1> <asp:label ID="lblSubmit" runat="server"> </asp:label> </h1>
+        <br><br />
         <label>Position:</label>
             <asp:DropDownList ID="ddlPosition" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select mentor or mentee: -</asp:ListItem>
@@ -523,7 +525,6 @@
 <br> <br \ />
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px"/>
-        <asp:label ID="lblSubmit" runat="server"> </asp:label>
     </div>
 
     </fieldset>

@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="Two-Factor Authentication" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TwoFactorAuthenticationSignIn.aspx.cs" Inherits="MentorAppFinal.Account.TwoFactorAuthenticationSignIn" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-        <h2><%: Title %>.</h2>
+    <div class="jumbotron">
+        <h1>Two Factor Authentication Sign In</h1>
+    </div>
     <asp:PlaceHolder runat="server" ID="sendcode">
         <section>
             <h4>Send verification code</h4>
