@@ -15,11 +15,9 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-horizontal">
-<<<<<<< HEAD
-                 
-=======
+                
+
                  <p> <a href="/YourAccount" button class="block">View Your Profile &raquo;</a> </p>
->>>>>>> 567c4918fdb52931b7ac07154baf5e5432c7f6ce
                 <h4>Change your account settings</h4>
                 <hr />
                 <dl class="dl-horizontal">
