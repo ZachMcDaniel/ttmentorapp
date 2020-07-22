@@ -184,15 +184,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Images\AnnaUse.jpg" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\FavIcon.png" />
+    <Content Include="Images\favicon2.png" />
     <Content Include="Maintenance\Default.aspx" />
     <Content Include="PlayingAround.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="TestingHTML.aspx" />
     <Content Include="ManageTeams.aspx" />
+    <Content Include="MeetYourTeamError.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
     <Content Include="Maintenance\Web.config" />
+    <Content Include="Images\favicon_io.zip" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="MeetYourTeam.aspx" />
     <Content Include="MemberStanding.aspx" />
@@ -470,6 +475,20 @@
     </Compile>
     <Compile Include="ManageTeams.aspx.designer.cs">
       <DependentUpon>ManageTeams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeetYourTeamError.aspx.cs">
+      <DependentUpon>MeetYourTeamError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeetYourTeamError.aspx.designer.cs">
+      <DependentUpon>MeetYourTeamError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="YourAccount.aspx.cs">
       <DependentUpon>YourAccount.aspx</DependentUpon>
