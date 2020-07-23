@@ -18,7 +18,7 @@
             </div>
 <br> <br />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID (number: ex.01234567):</asp:Label>
                 <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
                     CssClass="text-danger" ErrorMessage="The hawkID field is required." />
