@@ -11,7 +11,7 @@
         <h1><asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label></h1>
 <br> <br />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtName">Name:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="txtName">Name (First and Last):</asp:Label>
                 <asp:TextBox runat="server" ID="txtName" CssClass="form-control txtbox" TextMode="SingleLine" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
                     CssClass="text-danger" ErrorMessage="The name field is required." />
