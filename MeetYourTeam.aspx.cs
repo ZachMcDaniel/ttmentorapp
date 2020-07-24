@@ -21,28 +21,11 @@ namespace MentorAppFinal
 
             string user = Convert.ToString(userID);
 
-
             if (!IsPostBack)
             {
                 SqlDataSource1.SelectParameters["ID"].DefaultValue = user;
             }
-
-
-  
-
         }
-
-        protected void Page_Error(object sender, EventArgs e)
-            {
-            Exception ex = Server.GetLastError();
-            Server.ClearError();
-            Server.Transfer("~/MeetYourTeamError");
-            }
-
-  
-
-
-
 
         //protected void btnSubmit_Click(object sender, EventArgs e)
         //{
