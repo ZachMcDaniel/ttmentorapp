@@ -3,8 +3,9 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-
+    <div class="jumbotron">
+        <h1>Manage Your Account</h1>
+    </div>
     <div>
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
             <p class="text-success"><%: SuccessMessage %></p>
@@ -14,7 +15,9 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-horizontal">
-                 <p> <a href="/YourAccount" button class="block">View Your Profile &raquo;</a></p>
+                
+
+                 <p> <a href="/YourAccount" button class="block">View Your Profile &raquo;</a> </p>
                 <h4>Change your account settings</h4>
                 <hr />
                 <dl class="dl-horizontal">
@@ -22,11 +25,11 @@
                     <dd>
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Create]" Visible="false" ID="CreatePassword" runat="server" />
+                        <asp:HyperLink NavigateUrl="/Account/Forgot" Text="[Forgot]" Visible="false" ID="ForgotPassword" runat="server" />
                     </dd>
                     <dt>External Logins:</dt>
                     <dd><%: LoginsCount %>
                         <asp:HyperLink NavigateUrl="/Account/ManageLogins" Text="[Manage]" runat="server" />
-
                     </dd>
                     <%--
                         Phone Numbers can used as a second factor of verification in a two-factor authentication system.
@@ -52,12 +55,12 @@
                     <% } %>
                     --%>
 
-                    <dt>Two-Factor Authentication:</dt>
+<%--                    <dt>Two-Factor Authentication:</dt>
                     <dd>
                         <p>
                             There are no two-factor authentication providers configured. See <a href="https://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
                             for details on setting up this ASP.NET application to support two-factor authentication.
-                        </p>
+                        </p>--%>
                         <% if (TwoFactorEnabled)
                           { %> 
                         <%--

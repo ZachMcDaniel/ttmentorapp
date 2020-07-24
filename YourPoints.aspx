@@ -1,8 +1,23 @@
 ﻿<%@ Page Title="Your Points" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="YourPoints.aspx.cs" Inherits="MentorAppFinal.YourPoints" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<h1>Your Points</h1>
 
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <div class="jumbotron">
+        <h1>Your Points</h1>
+    </div>
+
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" Width="80%" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" HorizontalAlign="Center" HeaderStyle-CssClass="centerHeaderText">
+        <FooterStyle BackColor="White" ForeColor="#000066" />
+        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" Height="30px"/>
+        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+        <RowStyle ForeColor="#000000" Height="30px" />
+        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#00547E" />
+    </asp:GridView>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="IF OBJECT_ID('TempDB..#Organizer') IS NOT NULL DROP TABLE #Organizer
 SELECT 
@@ -27,8 +42,8 @@ FROM #Organizer a
 GROUP BY a.HawkID
 
 SELECT
-	 a.Title, a.Date, a.StartTime, a.Point
-	,b.TotalPoints
+	 a.Title as Event, FORMAT(a.Date, 'MM/dd/yyyy') as Date, a.StartTime as Time, a.Point AS Event_Points
+	,b.TotalPoints AS Total_Points
 FROM #Organizer a
 JOIN #TotalPoints b
 	ON a.HawkID = b.HawkID

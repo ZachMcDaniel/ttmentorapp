@@ -10,7 +10,7 @@
 namespace MentorAppFinal {
     
     
-    public partial class Administrators {
+    public partial class UserProfile {
         
         /// <summary>
         /// GridView1 control.

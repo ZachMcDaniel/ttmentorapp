@@ -7,6 +7,7 @@
     <div class="jumbotron">
         <h1>Create an Event</h1>
     </div>
+        <h1><asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label></h1>
 <br> <br />
     <h2>Add Event Details:</h2>
 <br> <br />
@@ -33,17 +34,17 @@
 <br> <br />
     <div>
         <label>Event Date:</label>
-        <asp:TextBox ID="txtDate" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtDate" runat="server" CssClass="form-control txtbox" TextMode="Date" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
         <label>Event Start Time:</label>
-        <asp:TextBox ID="txtStartTime" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtStartTime" runat="server" CssClass="form-control txtbox" TextMode="Time" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
         <label>Event End Time:</label>
-        <asp:TextBox ID="txtEndTime" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        <asp:TextBox ID="txtEndTime" runat="server" CssClass="form-control txtbox" TextMode="Time" Width="400px"></asp:TextBox>
     </div>
 <br> <br />
     <div>
@@ -58,7 +59,6 @@
 <br> <br />
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px" />
-        <asp:label class="col-sm-4" ID="lblSubmit" runat="server"></asp:label>
     </div>
 </fieldset>
 

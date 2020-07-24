@@ -5,8 +5,11 @@
     </div>
 <p>Username:  <%: Context.User.Identity.GetUserName()  %></p>
 <p>Position:  </p>
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
 
 
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 
 
 

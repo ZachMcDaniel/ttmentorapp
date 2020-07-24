@@ -1,8 +1,13 @@
 ﻿<%@ Page Title="Meet Your Team" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MeetYourTeam.aspx.cs" Inherits="MentorAppFinal.MeetYourTeam" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Meet Your Team</h1>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <div class="jumbotron">
+        <h1>Meet Your Team</h1>
+    </div>
+
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="80%" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" HorizontalAlign="Center">
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Position" HeaderText="Position" SortExpression="Position" />
@@ -11,10 +16,19 @@
             <asp:BoundField DataField="Pronouns" HeaderText="Pronouns" SortExpression="Pronouns" />
             <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
             <asp:BoundField DataField="Majors" HeaderText="Majors" SortExpression="Majors" />
-            <asp:BoundField DataField="TeamNumber" HeaderText="TeamNumber" SortExpression="TeamNumber" />
+            <asp:BoundField DataField="TeamNumber" HeaderText="Team Number" SortExpression="TeamNumber" />
         </Columns>
+        <FooterStyle BackColor="White" ForeColor="#000066" />
+        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" Height="30px" CssClass="centerHeaderText"/>
+        <PagerStyle BackColor="White" ForeColor="#000066" />
+        <RowStyle ForeColor="#000000" Height="30px" HorizontalAlign="left"/>
+        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="select * from Members where TeamNumber = (select TeamNumber FROM Members where UserId = (select Id FROM AspNetUsers where Id = @ID));">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Name, CASE WHEN Position = 1 THEN 'Mentor' ELSE 'Mentee' END AS Position, CASE WHEN Year = 0 THEN 'Freshman' WHEN Year = 1 THEN 'Sophomore' WHEN Year = 2 THEN 'Junior' WHEN Year = 3 THEN 'Senior' ELSE 'Other' End As Year, Phone, Email, Pronouns, CASE WHEN Majors = 0 THEN 'Pre-Business' WHEN Majors = 1 THEN 'BAIS' WHEN Majors = 2 THEN 'Finance' WHEN Majors = 3 THEN 'Accounting' WHEN Majors = 4 THEN 'Economics' WHEN Majors = 5 THEN 'Management' WHEN Majors = 6 THEN 'Marketing' WHEN Majors = 7 THEN 'Computer Science' ELSE 'Other' END AS Majors, TeamNumber from Members WHERE DATALENGTH(TeamNumber) > 0  AND TeamNumber = (select TeamNumber FROM Members where UserId = (select Id FROM AspNetUsers where Id = @ID))">
         <SelectParameters>
     <asp:Parameter Name="ID" Type="String"/>
 </SelectParameters>        

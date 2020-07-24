@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -51,7 +51,15 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact Us</a></li>
-                    <li><asp:LoginView runat="server">                            <RoleGroups>                                <asp:RoleGroup Roles="admin">                                    <ContentTemplate>                                             <a runat="server" href="~/AdminProfile">Admin</a>                                        </ContentTemplate>                                    </asp:RoleGroup>                                </RoleGroups>                                 </asp:LoginView></li>
+                    <li><asp:LoginView runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="admin">
+                                    <ContentTemplate>
+                                             <a runat="server" href="~/AdminProfile">Admin</a>
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                </RoleGroups>
+                                 </asp:LoginView></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -72,6 +80,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

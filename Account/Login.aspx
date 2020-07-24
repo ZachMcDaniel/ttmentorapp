@@ -55,12 +55,15 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
+                            <asp:Button runat="server" OnClick="LogIn" Text="Login" CssClass="btn btn-default" />
                         </div>
                     </div>
                 </div>
                 <p>
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register as a new user</asp:HyperLink>
+                </p>
+                <p>
+                    <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot Password?</asp:HyperLink>
                 </p>
                 <p>
                     <%-- Enable this once you have account confirmation enabled for password reset functionality
@@ -69,7 +72,6 @@
                 </p>
             </section>
         </div>
-
         <div class="col-md-4">
             <section id="socialLoginForm">
                 <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />

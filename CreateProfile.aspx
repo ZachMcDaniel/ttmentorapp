@@ -14,6 +14,8 @@
         <h1>Create Profile</h1>
     </div>
     <div>
+        <h1> <asp:label ID="lblSubmit" runat="server"> </asp:label> </h1>
+        <br><br />
         <label>Position:</label>
             <asp:DropDownList ID="ddlPosition" runat="server" CssClass="txtbox" Height="34px" Width="400px">
                 <asp:ListItem Selected="True" Value="0">- Select mentor or mentee: -</asp:ListItem>
@@ -34,8 +36,8 @@
             </div>
 <br> <br \ />
         <div>
-            <asp:Label runat="server" AssociatedControlID="txtHawkID">StudentID (numbers):</asp:Label>
-                <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="SingleLine" />
+            <asp:Label runat="server" AssociatedControlID="txtHawkID">HawkID (number: ex.01234567):</asp:Label>
+                <asp:TextBox runat="server" ID="txtHawkID" CssClass="form-control txtbox" TextMode="Number" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName"
                     CssClass="text-danger" ErrorMessage="The HawkID field is required." />
             </div>
@@ -523,7 +525,6 @@
 <br> <br \ />
     <div>
         <asp:Button ID="BtnSubmit" runat="server" Text="Submit" CssClass="Btn"  OnClick="BtnSubmit_Click" Width="125px"/>
-        <asp:label ID="lblSubmit" runat="server"> </asp:label>
     </div>
 
     </fieldset>

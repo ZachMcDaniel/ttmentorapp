@@ -11,7 +11,7 @@ namespace MentorAppFinal
 {
 
 
-    public partial class TestingHTML
+    public partial class WebForm5
     {
     }
 }

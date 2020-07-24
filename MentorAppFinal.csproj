@@ -166,7 +166,6 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Administrators.aspx" />
     <Content Include="AdminProfile.aspx" />
     <Content Include="CheckIntoEvent.aspx" />
     <Content Include="Contact.aspx" />
@@ -183,14 +182,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Images\AnnaUse.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\FavIcon.png" />
+    <Content Include="Images\favicon2.png" />
     <Content Include="Maintenance\Default.aspx" />
-    <Content Include="PlayingAround.aspx" />
-    <Content Include="Test.aspx" />
-    <Content Include="TestingHTML.aspx" />
     <Content Include="ManageTeams.aspx" />
+    <Content Include="MeetYourTeamError.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
     <Content Include="Maintenance\Web.config" />
+    <Content Include="Images\favicon_io.zip" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="MeetYourTeam.aspx" />
     <Content Include="MemberStanding.aspx" />
@@ -334,13 +338,6 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrators.aspx.cs">
-      <DependentUpon>Administrators.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrators.aspx.designer.cs">
-      <DependentUpon>Administrators.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -418,13 +415,6 @@
       <DependentUpon>MemberStanding.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="PlayingAround.aspx.cs">
-      <DependentUpon>PlayingAround.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PlayingAround.aspx.designer.cs">
-      <DependentUpon>PlayingAround.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -441,19 +431,12 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="TestingHTML.aspx.cs">
-      <DependentUpon>TestingHTML.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TestingHTML.aspx.designer.cs">
-      <DependentUpon>TestingHTML.aspx</DependentUpon>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -468,6 +451,20 @@
     </Compile>
     <Compile Include="ManageTeams.aspx.designer.cs">
       <DependentUpon>ManageTeams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeetYourTeamError.aspx.cs">
+      <DependentUpon>MeetYourTeamError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeetYourTeamError.aspx.designer.cs">
+      <DependentUpon>MeetYourTeamError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="YourAccount.aspx.cs">
       <DependentUpon>YourAccount.aspx</DependentUpon>
