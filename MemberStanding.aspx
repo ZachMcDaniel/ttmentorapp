@@ -9,7 +9,7 @@
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="IF OBJECT_ID('TempDB..#Organizer') IS NOT NULL DROP TABLE #Organizer
 SELECT 
-	a.Title, a.Date, a.StartTime, a.Point, b.HawkID
+	a.Title, a.Date, a.StartTime, a.Point, b.HawkID, b.Name
 INTO #Organizer
 FROM dbo.EVENT a
 	INNER JOIN
@@ -33,7 +33,7 @@ FROM #Organizer a
 JOIN #TotalPoints b
 	ON a.HawkID = b.HawkID
 
-
+ORDER BY a.HawkId
         
         "></asp:SqlDataSource>
 
