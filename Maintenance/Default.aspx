@@ -57,7 +57,6 @@
     <h3>Admins</h3>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
         <Columns>
-            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
             <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
         </Columns>
@@ -81,7 +80,6 @@
             <h3>Super Admins</h3>
             <asp:GridView ID="GridView3" runat="server" DataSourceID="SqlDataSource4" AutoGenerateColumns="False">
                 <Columns>
-                    <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                     <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
                 </Columns>
@@ -104,7 +102,7 @@
             <h3>Members</h3>
         <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource5">
             <Columns>
-                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+               
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                 <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
             </Columns>
