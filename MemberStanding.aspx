@@ -27,7 +27,7 @@ FROM dbo.EVENT a
 	INNER JOIN
 	dbo.SignIntoEvent b
 	ON a.MeetingCode = b.MeetingCode
-ORDER BY b.HawkID
+
 
 IF OBJECT_ID('TempDB..#TotalPoints') IS NOT NULL DROP TABLE #TotalPoints
 SELECT 
@@ -35,7 +35,7 @@ SELECT
 INTO #TotalPoints
 FROM #Organizer a
 GROUP BY a.HawkID
-ORDER BY a.HawkID
+
 
 
 SELECT
@@ -45,7 +45,7 @@ FROM #Organizer a
 JOIN #TotalPoints b
 	ON a.HawkID = b.HawkID
 
-ORDER BY a.HawkId
+ORDER BY a.Name
         
         "></asp:SqlDataSource>
 
