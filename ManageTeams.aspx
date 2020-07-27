@@ -36,7 +36,7 @@
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Name, CASE WHEN Position = 1 THEN 'Mentor' ELSE 'Mentee' END AS Position, CASE WHEN Year = 0 THEN 'Freshman' WHEN Year = 1 THEN 'Sophomore' WHEN Year = 2 THEN 'Junior' WHEN Year = 3 THEN 'Senior' ELSE 'Other' End As Year, Phone, Email, Pronouns, CASE WHEN Majors = 0 THEN 'Pre-Business' WHEN Majors = 1 THEN 'BAIS' WHEN Majors = 2 THEN 'Finance' WHEN Majors = 3 THEN 'Accounting' WHEN Majors = 4 THEN 'Economics' WHEN Majors = 5 THEN 'Management' WHEN Majors = 6 THEN 'Marketing' WHEN Majors = 7 THEN 'Computer Science' ELSE 'Other' END AS Majors, TeamNumber from Members" 
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Name, CASE WHEN Position = 1 THEN 'Mentor' ELSE 'Mentee' END AS Position, CASE WHEN Year = 1 THEN 'Freshman' WHEN Year = 2 THEN 'Sophomore' WHEN Year = 3 THEN 'Junior' WHEN Year = 4 THEN 'Senior' ELSE 'Other' End As Year, Phone, Email, Pronouns, CASE WHEN Majors = 1 THEN 'Pre-Business' WHEN Majors = 2 THEN 'BAIS' WHEN Majors = 3 THEN 'Finance' WHEN Majors = 4 THEN 'Accounting' WHEN Majors = 5 THEN 'Economics' WHEN Majors = 6 THEN 'Management' WHEN Majors = 7 THEN 'Marketing' WHEN Majors = 8 THEN 'Computer Science' ELSE 'Other' END AS Majors, TeamNumber from Members" 
             UpdateCommand="UPDATE [Members] SET [TeamNumber] = @TeamNumber WHERE [Name] = @original_Name"
             OldValuesParameterFormatString="original_{0}">
             <UpdateParameters>
