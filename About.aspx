@@ -49,7 +49,7 @@
         <h2><a href="mailto:jessica-buman@uiowa.edu">Jess Buman</a></h2>
         <h3>Executive Administrator</h3>
         <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/05/headshot-FINAL-207x300.jpg" style="max-height:300px; padding-bottom: 5px;" />
-        <p>Business Analytics and Information Systems major, with a International Business Certificate</p>
+        <p>Business Analytics and Information Systems major, with a International Business Certificate.</p>
         <p>I have been a member and held leadership positions within Tippie Tech for the last three years. Last semester, I was an Infrastructure Consulting Intern for RSM. This summer, I plan on working with EY as a Risk Advisory Intern. </p>
             </div>
             <div class="col-md-4">
