@@ -22,7 +22,7 @@
  
         </style>
     <div class="jumbotron">
-        <h1>About Us!</h1>
+        <h1>About Us</h1>
     </div>
     <div class="row">
         <div class="col-md-8">
@@ -100,17 +100,32 @@
                 <h2><a href="mailto:vincent-parcelli@uiowa.edu">Vincent Parcelli</a></h2>
         <h3>Director of Fundraising</h3>
         <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/05/IMG_0526-e1590961868920-225x300.jpeg" style="max-height:300px; padding-bottom: 5px;" />
-       
-        <p>Business Analytics and Information Systems major</p>
+        <p>Business Analytics and Information Systems Major</p>
                 <p>I’ve been in Tippie Tech for a year now and I’ve loved every part of it! My favorite thing about the club is being able to listen to actual companies come in and talk with us about their operations and what makes them successful and then having the opportunity to speak with them about where I could possibly see myself with them. I am also a member of Hawk Trade Investment Club here on campus and I play on the University of Iowa Club Baseball Team. I am very excited to see what we have in store this year for Tippie Tech and I can’t wait to make it even more successful than it already has been! </p>
             </div>
             <div class="col-md-4">
         <h2><a href="mailto:annalyssa-holly@uiowa.edu">Anna Holly</a></h2>
         <h3>Director of Finance</h3>
         <img src="Images/AnnaUse.jpg" style="max-height:300px; padding-bottom: 5px;" />
-
         <p>Business Analytics and Finance Major</p>
         <p>As I begin my third year in Tippie Tech, I’m very excited to be on the Executive Board. I am also involved in Big Brothers Big Sisters and the Salt Company. I am currently doing a co-op internship with Collins Aerospace. A fun fact about me is I love coffee, so if you can’t find me in Tippie, you can most likely find me in one of the local coffee shops! </p>
+            </div>
+        </div>
+
+            <div class="col-md-4">
+        <h2><a href="mailto:yanni-mihalopoulos@uiowa.edu">Yanni Mihalopoulos</a></h2>
+        <h3>VP of Internal Affairs</h3>
+        <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/06/Yanni-SN-e1593003282522-229x300.jpg" style="max-height:300px; padding-bottom: 5px;" />
+        <p>Business Analytics Major</p>
+        <p>Synergizing analytics and environmental sustainability is what I want to do after school. I am excited to learn more about both while incorporating my own thoughts and ideas.</p>
+            </div>
+
+                <div class="col-md-4">
+        <h2><a href="mailto:zachary-mcdaniel@uiowa.edu">Zach McDaniel</a></h2>
+        <h3>VP of Applications</h3>
+        <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/08/Headshot-233x300.jpg" style="max-height:300px; padding-bottom: 5px;" />
+        <p>Business Analytics Major</p>
+        <p>This is my second year in Tippie Tech and I am excited to be able to help out and contribute to this great organization. I look forward to working with everyone this year; if you see me around feel free to stop and talk!</p>
             </div>
         </div>
 </asp:Content>

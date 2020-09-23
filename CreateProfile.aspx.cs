@@ -30,7 +30,7 @@ namespace MentorAppFinal
             }
         }
 
-        protected void BtnSubmit_Click(object sender, EventArgs e)
+        protected string BtnSubmit_Click(object sender, EventArgs e)
         {
 
             if (Page.IsValid)
@@ -60,7 +60,7 @@ namespace MentorAppFinal
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "Insert into Members Values('" + txtName.Text + "','" + ddlPosition.SelectedValue + "', '" + txtHawkID.Text + "', '" +
-                        txtEmail.Text + "', '" + txtPhone.Text + "', '" + txtHometown.Text + "', '" + txtPronouns.Text + "', '" + ddlTransportation.SelectedValue + "', '" +
+                        txtEmail.Text + "', '" + txtPhone.Text + "', '" + txtHometown.Text + "', '" + txtPronouns.Text + "', '" + ddlTransportation.SelectedValue + "', '" + ddlShirt.SelectedValue + "', '" +
                         ddlYear.SelectedValue + "', '" + ddlMajor.SelectedValue + "', '" + ddlCertificate.SelectedValue + "', '" + txtMinors.Text + "', '" +
                         ddlGPA.SelectedValue + "', '" + ddlGender.SelectedValue + "', '" + ddlRace.SelectedValue + "', '" + ddlFirstGeneration.SelectedValue + "', '" +
                         ddlDisabilities.SelectedValue + "', '" + ddlTypeDisabilities.SelectedValue + "', '" + ddlVeteran.SelectedValue + "', '" + txtOther.Text + "', '" +
@@ -85,7 +85,8 @@ namespace MentorAppFinal
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "Update Members set Name = '" + txtName.Text + "', Position ='" + ddlPosition.SelectedValue + "', HawkID ='" + txtHawkID.Text + "', Email ='" +
-                        txtEmail.Text + "', Phone ='" + txtPhone.Text + "', Hometown = '" + txtHometown.Text + "', Pronouns ='" + txtPronouns.Text + "', Transportation = '" + ddlTransportation.SelectedValue + "', Year ='" +
+                        txtEmail.Text + "', Phone ='" + txtPhone.Text + "', Hometown = '" + txtHometown.Text + "', Pronouns ='" + txtPronouns.Text + "', Transportation = '" + ddlTransportation.SelectedValue + "', Shirt = '" + ddlShirt.SelectedValue +
+                        "', Year ='" +
                         ddlYear.SelectedValue + "', Majors = '" + ddlMajor.SelectedValue + "', Certificates ='" + ddlCertificate.SelectedValue + "', Minors = '" + txtMinors.Text + "', GPA ='" +
                         ddlGPA.SelectedValue + "', Gender ='" + ddlGender.SelectedValue + "', Race ='" + ddlRace.SelectedValue + "', [FirstGeneration] ='" + ddlFirstGeneration.SelectedValue + "', [Disabilities] ='" +
                         ddlDisabilities.SelectedValue + "', [TypeDisabilities] = '" + ddlTypeDisabilities.SelectedValue + "', [Veteran] ='" + ddlVeteran.SelectedValue + "', [Other] ='" + txtOther.Text + "', [Extrovert] ='" +
@@ -119,6 +120,7 @@ namespace MentorAppFinal
             txtHometown.Text = "";
             txtPronouns.Text = "";
             ddlTransportation.SelectedValue = "";
+            ddlShirt.SelectedValue = "";
             ddlYear.SelectedValue = "";
             ddlMajor.SelectedValue = "";
             ddlCertificate.SelectedValue = "";

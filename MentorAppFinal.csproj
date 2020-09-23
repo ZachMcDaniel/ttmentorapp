@@ -166,7 +166,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="AdminAnnouncements.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="Announcements.aspx" />
     <Content Include="CheckIntoEvent.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -186,6 +188,7 @@
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\FavIcon.png" />
     <Content Include="Images\favicon2.png" />
+    <Content Include="JessTest.aspx" />
     <Content Include="Maintenance\Default.aspx" />
     <Content Include="ManageTeams.aspx" />
     <Content Include="MeetYourTeamError.aspx" />
@@ -338,12 +341,26 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminAnnouncements.aspx.cs">
+      <DependentUpon>AdminAnnouncements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAnnouncements.aspx.designer.cs">
+      <DependentUpon>AdminAnnouncements.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Announcements.aspx.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Announcements.aspx.designer.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -394,6 +411,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="JessTest.aspx.cs">
+      <DependentUpon>JessTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JessTest.aspx.designer.cs">
+      <DependentUpon>JessTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -403,6 +427,7 @@
     </Compile>
     <Compile Include="MeetYourTeam.aspx.cs">
       <DependentUpon>MeetYourTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MeetYourTeam.aspx.designer.cs">
       <DependentUpon>MeetYourTeam.aspx</DependentUpon>
