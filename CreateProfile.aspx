@@ -74,6 +74,18 @@
                 <asp:ListItem Value="2">No</asp:ListItem>
             </asp:DropDownList>
     </div>
+<br> <br \ />
+    <div>
+        <label>What is your t-shirt size?</label>
+            <asp:DropDownList ID="ddlShirt" runat="server" CssClass="txtbox" Height="34px" Width="400px">
+                <asp:ListItem Selected="True" Value="0">- Select t-shirt size: -</asp:ListItem>
+                <asp:ListItem Value="1">Adult Small</asp:ListItem>
+                <asp:ListItem Value="2">Adult Medium</asp:ListItem>
+                <asp:ListItem Value="3">Adult Large</asp:ListItem>
+                <asp:ListItem Value="4">Adult XL</asp:ListItem>
+                <asp:ListItem Value="5">Adult XXL</asp:ListItem>
+            </asp:DropDownList>
+    </div>
 <br> <br \ /> 
 <div>
     <h3>Educational Information:</h3>
