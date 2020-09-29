@@ -17,6 +17,8 @@ namespace MentorAppFinal
     {
         SqlConnection con = new SqlConnection("Data Source=bais-mssql.database.windows.net; Initial Catalog=mentorapplication; Persist Security Info=True;User ID=mentorapp-app; Password=45tq246acXcgcQHaewiLOIumno2(8kjhPUGGlweMZrQNXlN; Connect Timeout=30; Encrypt=True; TrustServerCertificate=False; ApplicationIntent=ReadWrite; MultiSubnetFailover=False");
         private object result;
+        private string runat;
+        private string href;
 
         public object Name { get; private set; }
         public object Position { get; private set; }
@@ -61,7 +63,7 @@ namespace MentorAppFinal
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "Insert into Members Values('" + txtName.Text + "','" + ddlPosition.SelectedValue + "', '" + txtHawkID.Text + "', '" +
                         txtEmail.Text + "', '" + txtPhone.Text + "', '" + txtHometown.Text + "', '" + txtPronouns.Text + "', '" + ddlTransportation.SelectedValue + "', '" + ddlShirt.SelectedValue + "', '" +
-                        ddlYear.SelectedValue + "', '" + ddlMajor.SelectedValue + "', '" + ddlCertificate.SelectedValue + "', '" + txtMinors.Text + "', '" +
+                        ddlYear.SelectedValue + "', '" + ddlMajor.SelectedValue + "', '" + txtMajor.Text + "', '" + ddlCertificate.SelectedValue + "', '" + txtMinors.Text + "', '" +
                         ddlGPA.SelectedValue + "', '" + ddlGender.SelectedValue + "', '" + ddlRace.SelectedValue + "', '" + ddlFirstGeneration.SelectedValue + "', '" +
                         ddlDisabilities.SelectedValue + "', '" + ddlTypeDisabilities.SelectedValue + "', '" + ddlVeteran.SelectedValue + "', '" + txtOther.Text + "', '" +
                         ddlExtrovert.SelectedValue + "', '" + ddlEmotional.SelectedValue + "', '" + ddlLeader.SelectedValue + "', '" + ddlDetail.SelectedValue + "', '" +
@@ -87,7 +89,8 @@ namespace MentorAppFinal
                     cmd.CommandText = "Update Members set Name = '" + txtName.Text + "', Position ='" + ddlPosition.SelectedValue + "', HawkID ='" + txtHawkID.Text + "', Email ='" +
                         txtEmail.Text + "', Phone ='" + txtPhone.Text + "', Hometown = '" + txtHometown.Text + "', Pronouns ='" + txtPronouns.Text + "', Transportation = '" + ddlTransportation.SelectedValue + "', Shirt = '" + ddlShirt.SelectedValue +
                         "', Year ='" +
-                        ddlYear.SelectedValue + "', Majors = '" + ddlMajor.SelectedValue + "', Certificates ='" + ddlCertificate.SelectedValue + "', Minors = '" + txtMinors.Text + "', GPA ='" +
+                        ddlYear.SelectedValue + "', Majors = '" + ddlMajor.SelectedValue + "', Major = '" + txtMajor.Text +
+                        "', Certificates ='" + ddlCertificate.SelectedValue + "', Minors = '" + txtMinors.Text + "', GPA ='" +
                         ddlGPA.SelectedValue + "', Gender ='" + ddlGender.SelectedValue + "', Race ='" + ddlRace.SelectedValue + "', [FirstGeneration] ='" + ddlFirstGeneration.SelectedValue + "', [Disabilities] ='" +
                         ddlDisabilities.SelectedValue + "', [TypeDisabilities] = '" + ddlTypeDisabilities.SelectedValue + "', [Veteran] ='" + ddlVeteran.SelectedValue + "', [Other] ='" + txtOther.Text + "', [Extrovert] ='" +
                         ddlExtrovert.SelectedValue + "', [Emotional] = '" + ddlEmotional.SelectedValue + "', [Leader] ='" + ddlLeader.SelectedValue + "', [Detail] ='" + ddlDetail.SelectedValue + "', [Quiet] ='" +
@@ -105,6 +108,7 @@ namespace MentorAppFinal
             else
             {
                 //ErrorMessage.Text = result.Errors.FirstOrDefault();
+                //runat = "server" href = "~/Error";
             }
         }
 
@@ -123,6 +127,7 @@ namespace MentorAppFinal
             ddlShirt.SelectedValue = "";
             ddlYear.SelectedValue = "";
             ddlMajor.SelectedValue = "";
+            txtMajor.Text = "";
             ddlCertificate.SelectedValue = "";
             txtMinors.Text = "";
             ddlGPA.SelectedValue = "";

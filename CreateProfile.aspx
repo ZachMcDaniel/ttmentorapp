@@ -119,6 +119,11 @@
             </asp:DropDownList>
     </div>
 <br> <br \ />
+        <label>Additional Major Information:</label>
+        <div>
+            <asp:TextBox ID="txtMajor" runat="server" CssClass="form-control txtbox" Width="400px"></asp:TextBox>
+        </div>
+<br> <br \ />
     <div>
         <label>Select Certificate:</label>
             <asp:DropDownList ID="ddlCertificate" runat="server" CssClass="txtbox" Height="34px" Width="400px">

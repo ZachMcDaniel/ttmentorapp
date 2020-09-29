@@ -3,7 +3,7 @@
     <div class="jumbotron">
 
         <h1>Whoops!</h1>
-        <p class="lead">It looks like we've run into an error.</p>
+        <p class="lead">It looks like we've run into an error. Contact tippietechnology@gmail.com with any questions</p>
     </div>
     <p> <a href="/Default" button class="block">Homepage &raquo;</a></p>
 </asp:Content>

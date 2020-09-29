@@ -54,7 +54,7 @@
     </div>
     <div class="row">
         <div class="col-sm-4">
-    <h3>Admins</h3>
+    <h3>Admin Role</h3>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" HeaderStyle-CssClass="centerHeaderText">
         <Columns>
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
@@ -76,7 +76,7 @@
 
         </div>
         <div class ="col-sm-4">
-            <h3>Super Admins</h3>
+            <h3>Super Admin Role</h3>
             <asp:GridView ID="GridView3" runat="server" DataSourceID="SqlDataSource4" AutoGenerateColumns="False" HeaderStyle-CssClass="centerHeaderText">
                 <Columns>
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
@@ -97,7 +97,7 @@
     
 
     <div class ="col-sm-4">
-            <h3>Members</h3>
+            <h3>Member Role</h3>
         <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource5" HeaderStyle-CssClass="centerHeaderText">
             <Columns>
                
@@ -114,7 +114,51 @@
         <SortedDescendingHeaderStyle BackColor="#00547E" />
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Email FROM [AspNetUserRoles] INNER JOIN AspNetRoles ON AspNetUserRoles.RoleId = AspNetRoles.Id INNER JOIN AspNetUsers ON AspNetUserRoles.UserId = AspNetUsers.Id WHERE (AspNetRoles.Name = 'member')"></asp:SqlDataSource>
+            <br />
         </div>
+
+    <div class ="col-sm-4">
+            <h3>Users without Roles</h3>
+        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource5" HeaderStyle-CssClass="centerHeaderText">
+            <Columns>
+               
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            </Columns>
+        <FooterStyle BackColor="White" ForeColor="#000066" />
+        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" Height="30px" />
+        <PagerStyle BackColor="White" ForeColor="#000000" />
+        <RowStyle ForeColor="#000066" Height="30px" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#00547E" />
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Email FROM [AspNetUserRoles] INNER JOIN AspNetRoles ON AspNetUserRoles.RoleId = AspNetRoles.Id INNER JOIN AspNetUsers ON AspNetUserRoles.UserId = AspNetUsers.Id WHERE (AspNetRoles.Name = 'member')"></asp:SqlDataSource>
+            <br />
+        </div>
+
+    <div class ="col-sm-4">
+            <h3>All Users</h3>
+        <asp:GridView ID="GridView6" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource5" HeaderStyle-CssClass="centerHeaderText">
+            <Columns>
+               
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            </Columns>
+        <FooterStyle BackColor="White" ForeColor="#000066" />
+        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" Height="30px" />
+        <PagerStyle BackColor="White" ForeColor="#000000" />
+        <RowStyle ForeColor="#000066" Height="30px" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#00547E" />
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlQuery1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="Select Email FROM dbo.AspNetUsers;"></asp:SqlDataSource>
+            <br />
+        </div>
+
     </div>
 </asp:Content>
 
