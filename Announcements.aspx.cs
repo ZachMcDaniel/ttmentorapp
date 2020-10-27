@@ -50,7 +50,7 @@ namespace CaseCompetitionApp
 
             {
 
-                empty.Visible = true;
+                //empty.Visible = true;
 
             }
 
@@ -60,7 +60,7 @@ namespace CaseCompetitionApp
 
             {
 
-                empty.Visible = false;
+                //empty.Visible = false;
 
             }
 

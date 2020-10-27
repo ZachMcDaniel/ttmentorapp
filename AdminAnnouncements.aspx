@@ -1,30 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminAnnouncements.aspx.cs" Inherits="MentorAppFinal.AdminAnnouncements" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-    <style>
-        h1{
-            text-align: center; 
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background-color: white;
-            text-align: center;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif
-        }
-        card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-       
-    </style>
- 
-        </style>
-    <div class="jumbotron">
-        <h1>Update News Feed</h1>
-    </div>
+     <h2 class=" center gold">
+       Update News Feed
+    </h2>
     <h3 class="center">
+
         Add or Remove Announcements on the News Page
     </h3>
     <br />
@@ -53,6 +35,7 @@
                     </asp:CommandField>
                 </Columns>
 <EditRowStyle BorderWidth="4px"></EditRowStyle>
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                 <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
                 <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
@@ -78,24 +61,24 @@
     <div class="row">
             <asp:UpdatePanel runat="server" ID="newsupdate" UpdateMode="Conditional">
                 <ContentTemplate>
-                     <div class="col-md-8"
-            <asp:TextBox ID="txtNews" runat="server" class="txtbox" TextMode="MultiLine" Wrap="True"></asp:TextBox> <%--YEET--%>
+                     <div class="col-md-8">
+            <asp:TextBox ID="txtNews" runat="server" class="txtbox" TextMode="MultiLine" Wrap="True"></asp:TextBox>
                 <br />
                 <asp:RegularExpressionValidator ID="REVEntry" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtNews" ValidationExpression="^[\s\S]{0,1000}$" CssClass="text-danger" style="font:bold">1000 word limit on news posts</asp:RegularExpressionValidator>
                 <asp:RequiredFieldValidator ID="rfVEntry" runat="server"  CssClass="text-danger" ControlToValidate="txtNews" ErrorMessage="RequiredFieldValidator">News Entry Required</asp:RequiredFieldValidator>
                 </div>
             <div class="col-md-2">
-                <asp:Button ID="btnNews" CssClass="btn btn-default grey" width="100%" runat="server" Text="Insert News" OnClick="btnNewsClick" />
+                <asp:Button ID="buttonNews" CssClass="btn btn-default grey" width="100%" runat="server" Text="Insert News" OnClick="NewsClick" />
              </div>
                     <div class="col-md-2">
                         <Triggers>
-                        <asp:AsyncPostBackTrigger ControlID="btnNews" EventName="btnNewsClick"/>
+                       <asp:AsyncPostBackTrigger ControlID="buttonNews" EventName="NewsClick"/>
                         </Triggers>
                 <asp:Button ID="btncancel" CausesValidation="false" CssClass="btn btn-default grey" width="100%" runat="server" Text="Clear" OnClick="btnClear_Click" />
              </div>
                          </ContentTemplate>  
                         </asp:UpdatePanel>
-    </div>
+   </div>
     <div class="col-md-12">
         <hr />
     </div>
