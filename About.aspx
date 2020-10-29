@@ -42,7 +42,7 @@
         <h3>President</h3>
         <img src="https://www.biz.uiowa.edu/tippietech/wp-content/uploads/sites/19/2020/06/IMG_339314-300x200.jpg" style="max-height:300px; padding-bottom: 5px;" />
         <p>Business Analytics and Finance Major</p>
-        <p>I am thrilled and eager to serve as the president for Tippie Tech this school year! This will be my third year in the organization and my second year on the executive board. Outside of Tippie Tech, I also serve as the Director of Operations for Tippieâ€™s stock investment club, HawkTrade, and work in the Tippie Analytics Department. My passion for assisting others is reflected in the new professional growth opportunities the executive board and I have developed for this school year. I am looking forward to working with everyone this year and hope that Tippie Tech serves you as well as it has served me. </p>
+        <p>I am thrilled and eager to serve as the president for Tippie Tech this school year! This will be my third year in the organization and my second year on the executive board. Outside of Tippie Tech, I also serve as the Director of Operations for Tippie's stock investment club, HawkTrade, and work in the Tippie Analytics Department. My passion for assisting others is reflected in the new professional growth opportunities the executive board and I have developed for this school year. I am looking forward to working with everyone this year and hope that Tippie Tech serves you as well as it has served me. </p>
         </div>
    
             <div class="col-md-4">
