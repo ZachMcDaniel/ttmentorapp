@@ -30,6 +30,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
     <p> <a href="/ManageTeams" button class="block">Manage Mentorship Teams &raquo;</a></p>
     <p> <a href="/CreateEvent" button class="block">Create an Event &raquo;</a></p>
     <p> <a href="/Maintenance" button class="block">Administrator Rights &raquo;</a></p>
+    <p> <a href="/Members" button class="block">All Members &raquo;</a></p>
 <div class="row">
         <div class="col-md-8">
             <h3>Upcoming Events</h3>

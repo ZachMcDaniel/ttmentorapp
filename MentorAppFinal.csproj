@@ -194,6 +194,7 @@
     <Content Include="ManageTeams.aspx" />
     <Content Include="MeetYourTeamError.aspx" />
     <Content Include="Error.aspx" />
+    <Content Include="Members.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="YourAccount.aspx" />
     <Content Include="YourPoints.aspx" />
@@ -439,6 +440,13 @@
     </Compile>
     <Compile Include="MeetYourTeam.aspx.designer.cs">
       <DependentUpon>MeetYourTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members.aspx.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members.aspx.designer.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberStanding.aspx.cs">
       <DependentUpon>MemberStanding.aspx</DependentUpon>

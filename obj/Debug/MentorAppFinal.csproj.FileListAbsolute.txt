@@ -615,3 +615,4 @@ C:\Users\buman\Desktop\ttmentorapp\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\buman\Desktop\ttmentorapp\obj\Debug\MentorAppFinal.csproj.CopyComplete
 C:\Users\buman\Desktop\ttmentorapp\obj\Debug\MentorAppFinal.dll
 C:\Users\buman\Desktop\ttmentorapp\obj\Debug\MentorAppFinal.pdb
+C:\Users\buman\Desktop\ttmentorapp\obj\Debug\MentorAppFinal.csprojAssemblyReference.cache
