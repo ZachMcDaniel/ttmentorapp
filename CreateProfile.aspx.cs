@@ -28,93 +28,88 @@ namespace MentorAppFinal
         {
             if (!IsPostBack)
             {
-                //ClearFields();
+                ClearFields();
             }
         }
 
-        //protected string BtnSubmit_Click(object sender, EventArgs e)
-        //{
+        protected void BtnSubmit_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                var userID = User.Identity.GetUserId();
 
-        //    //if (Page.IsValid)
-        //    //{
+                string user = Convert.ToString(userID);
 
-        //    //    var userID = User.Identity.GetUserId();
+                string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                SqlConnection con = new SqlConnection(mainconn);
+                con.Open();
+                SqlCommand sqlcomm = new SqlCommand();
 
-        //    //    string user = Convert.ToString(userID);
+                string check = "select userid from [Members] where userid = @ID;";
+                SqlCommand command = new SqlCommand(check, con);
+
+                command.Parameters.AddWithValue("@ID", user);
 
 
-        //    //    string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        //    //    SqlConnection con = new SqlConnection(mainconn);
-        //    //    con.Open();
-        //    //    SqlCommand sqlcomm = new SqlCommand();
+                SqlDataReader reader = command.ExecuteReader();
 
-        //    //    string check = "select userid from mentorapplication.dbo.Members where userid = @ID;";
-        //    //    SqlCommand command = new SqlCommand(check, con);
+                if (!reader.Read())
+                {
+                    con.Close();
 
-        //    //    command.Parameters.AddWithValue("@ID", user);
+                    con.Open();
 
-        //    //    SqlDataReader reader = command.ExecuteReader();
-        //    //    if (!reader.Read())
-        //    //    {
-        //    //        con.Close();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "Insert into Members Values('" + txtName.Text + "','" + ddlPosition.SelectedValue + "', '" + txtHawkID.Text + "', '" +
+                        txtEmail.Text + "', '" + txtPhone.Text + "', '" + txtHometown.Text + "', '" + txtPronouns.Text + "', '" + ddlTransportation.SelectedValue + "', '" + ddlShirt.SelectedValue + "', '" +
+                        ddlYear.SelectedValue + "', '" + ddlMajor.SelectedValue + "', '" + txtMajor.Text + "', '" + ddlCertificate.SelectedValue + "', '" + txtMinors.Text + "', '" +
+                        ddlGPA.SelectedValue + "', '" + ddlGender.SelectedValue + "', '" + ddlRace.SelectedValue + "', '" + ddlFirstGeneration.SelectedValue + "', '" +
+                        ddlDisabilities.SelectedValue + "', '" + ddlTypeDisabilities.SelectedValue + "', '" + ddlVeteran.SelectedValue + "', '" + txtOther.Text + "', '" +
+                        ddlExtrovert.SelectedValue + "', '" + ddlEmotional.SelectedValue + "', '" + ddlLeader.SelectedValue + "', '" + ddlDetail.SelectedValue + "', '" +
+                        ddlQuiet.SelectedValue + "', '" + ddlFriends.SelectedValue + "', '" + ddlAthletics.SelectedValue + "', '" + ddlGames.SelectedValue + "', '" +
+                        ddlMusic.SelectedValue + "', '" + ddlActivity.SelectedValue + "', '" + ddlFood.SelectedValue + "', '" + ddlTime.SelectedValue + "', '" + ddlCovid.SelectedValue + "', '" +
+                        ddlOpportunity.SelectedValue + "', '" + ddlHours.SelectedValue + "', '" + ddlStudy.SelectedValue + "', '" + ddlStudyTime.SelectedValue + "', '" +
+                        ddlInternship.SelectedValue + "', '" + txtWhere.Text + "', '" + txtDream.Text + "', '" + ddlCompany.SelectedValue + "', '" + ddlIndustry.SelectedValue + "', '" +
+                        txtHobby.Text + "', '" + txtWhy.Text + "', '" + txtProgram.Text + "', '" + txtChoose.Text + "', '" + txtOrgs.Text + "', '" + txtSuccess.Text + "', '" + null + "', '" + user + "')";
 
-        //    //        con.Open();
-        //    //        SqlCommand cmd = con.CreateCommand();
-        //    //        cmd.CommandType = CommandType.Text;
-        //    //        cmd.CommandText = "Insert into Members Values('" + txtName.Text + "','" + ddlPosition.SelectedValue + "', '" + txtHawkID.Text + "', '" +
-        //    //            txtEmail.Text + "', '" + txtPhone.Text + "', '" + txtHometown.Text + "', '" + txtPronouns.Text + "', '" + ddlTransportation.SelectedValue + "', '" + ddlShirt.SelectedValue + "', '" +
-        //    //            ddlYear.SelectedValue + "', '" + ddlMajor.SelectedValue + "', '" + txtMajor.Text + "', '" + ddlCertificate.SelectedValue + "', '" + txtMinors.Text + "', '" +
-        //    //            ddlGPA.SelectedValue + "', '" + ddlGender.SelectedValue + "', '" + ddlRace.SelectedValue + "', '" + ddlFirstGeneration.SelectedValue + "', '" +
-        //    //            ddlDisabilities.SelectedValue + "', '" + ddlTypeDisabilities.SelectedValue + "', '" + ddlVeteran.SelectedValue + "', '" + txtOther.Text + "', '" +
-        //    //            ddlExtrovert.SelectedValue + "', '" + ddlEmotional.SelectedValue + "', '" + ddlLeader.SelectedValue + "', '" + ddlDetail.SelectedValue + "', '" +
-        //    //            ddlQuiet.SelectedValue + "', '" + ddlFriends.SelectedValue + "', '" + ddlAthletics.SelectedValue + "', '" + ddlGames.SelectedValue + "', '" +
-        //    //            ddlMusic.SelectedValue + "', '" + ddlActivity.SelectedValue + "', '" + ddlFood.SelectedValue + "', '" + ddlTime.SelectedValue + "', '" + ddlCovid.SelectedValue + "', '" +
-        //    //            ddlOpportunity.SelectedValue + "', '" + ddlHours.SelectedValue + "', '" + ddlStudy.SelectedValue + "', '" + ddlStudyTime.SelectedValue + "', '" +
-        //    //            ddlInternship.SelectedValue + "', '" + txtWhere.Text + "', '" + txtDream.Text + "', '" + ddlCompany.SelectedValue + "', '" + ddlIndustry.SelectedValue + "', '" +
-        //    //            txtHobby.Text + "', '" + txtWhy.Text + "', '" + txtProgram.Text + "', '" + txtChoose.Text + "', '" + txtOrgs.Text + "', '" + txtSuccess.Text + "', '" + null + "', '" + user + "')";
-        //    //        cmd.ExecuteNonQuery();
-        //    //        con.Close();
-        //    //        ClearFields();
-        //    //        lblSubmit.Text = "Submitted";
+                    cmd.ExecuteNonQuery();
 
-        //    //        return lblSubmit.Text;
+                    con.Close();
 
-        //    //    }
+                    ClearFields();
 
-        //    //    else
-        //    //    {
-        //    //        con.Close();
+                    lblSubmit.Text = "Submitted";
+                }
 
-        //    //        con.Open();
-        //    //        SqlCommand cmd = con.CreateCommand();
-        //    //        cmd.CommandType = CommandType.Text;
-        //    //        cmd.CommandText = "Update Members set Name = '" + txtName.Text + "', Position ='" + ddlPosition.SelectedValue + "', HawkID ='" + txtHawkID.Text + "', Email ='" +
-        //    //            txtEmail.Text + "', Phone ='" + txtPhone.Text + "', Hometown = '" + txtHometown.Text + "', Pronouns ='" + txtPronouns.Text + "', Transportation = '" + ddlTransportation.SelectedValue + "', Shirt = '" + ddlShirt.SelectedValue +
-        //    //            "', Year ='" +
-        //    //            ddlYear.SelectedValue + "', Majors = '" + ddlMajor.SelectedValue + "', Major = '" + txtMajor.Text +
-        //    //            "', Certificates ='" + ddlCertificate.SelectedValue + "', Minors = '" + txtMinors.Text + "', GPA ='" +
-        //    //            ddlGPA.SelectedValue + "', Gender ='" + ddlGender.SelectedValue + "', Race ='" + ddlRace.SelectedValue + "', [FirstGeneration] ='" + ddlFirstGeneration.SelectedValue + "', [Disabilities] ='" +
-        //    //            ddlDisabilities.SelectedValue + "', [TypeDisabilities] = '" + ddlTypeDisabilities.SelectedValue + "', [Veteran] ='" + ddlVeteran.SelectedValue + "', [Other] ='" + txtOther.Text + "', [Extrovert] ='" +
-        //    //            ddlExtrovert.SelectedValue + "', [Emotional] = '" + ddlEmotional.SelectedValue + "', [Leader] ='" + ddlLeader.SelectedValue + "', [Detail] ='" + ddlDetail.SelectedValue + "', [Quiet] ='" +
-        //    //            ddlQuiet.SelectedValue + "', [Friends] = '" + ddlFriends.SelectedValue + "', [Athletics] ='" + ddlAthletics.SelectedValue + "', [Games] = '" + ddlGames.SelectedValue + "', [Music] ='" +
-        //    //            ddlMusic.SelectedValue + "', [Activity] ='" + ddlActivity.SelectedValue + "', [Food]='" + ddlFood.SelectedValue + "', [Time] ='" + ddlTime.SelectedValue + "', [Covid]='" + ddlCovid.SelectedValue + "', [Opportunity]='" +
-        //    //            ddlOpportunity.SelectedValue + "', [Hours] = '" + ddlHours.SelectedValue + "', [Study] ='" + ddlStudy.SelectedValue + "', [StudyTime] = '" + ddlStudyTime.SelectedValue + "', [Internship] = '" +
-        //    //            ddlInternship.SelectedValue + "', [Where] ='" + txtWhere.Text + "', [Dream] ='" + txtDream.Text + "', [Company] ='" + ddlCompany.SelectedValue + "', [Industry] ='" + ddlIndustry.SelectedValue + "', [Hobby] ='" +
-        //    //            txtHobby.Text + "', [Why] = '" + txtWhy.Text + "', [Program] = '" + txtProgram.Text + "', [Choose] = '" + txtChoose.Text + "', [Orgs] ='" + txtOrgs.Text + "', [Success] = '" + txtSuccess.Text + "' where [UserID] ='" + user + "';";
-        //    //        cmd.ExecuteNonQuery();
-        //    //        con.Close();
-        //    //        ClearFields();
-        //    //        lblSubmit.Text = "Profile Updated!";
+                else
+                {
+                    con.Close();
 
-        //    //        return lblSubmit.Text;
-        //    //    }
-        //    //}
-        //    //else
-        //    //{
-        //    //    //ErrorMessage.Text = result.Errors.FirstOrDefault();
-        //    //    //runat = "server" href = "~/Error";
-        //    //}
-        //}
+                    con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "Update Members set Name = '" + txtName.Text + "', Position ='" + ddlPosition.SelectedValue + "', HawkID ='" + txtHawkID.Text + "', Email ='" +
+                        txtEmail.Text + "', Phone ='" + txtPhone.Text + "', Hometown = '" + txtHometown.Text + "', Pronouns ='" + txtPronouns.Text + "', Transportation = '" + ddlTransportation.SelectedValue + "', Shirt = '" + ddlShirt.SelectedValue +
+                        "', Year ='" +
+                        ddlYear.SelectedValue + "', Majors = '" + ddlMajor.SelectedValue + "', Major = '" + txtMajor.Text +
+                        "', Certificates ='" + ddlCertificate.SelectedValue + "', Minors = '" + txtMinors.Text + "', GPA ='" +
+                        ddlGPA.SelectedValue + "', Gender ='" + ddlGender.SelectedValue + "', Race ='" + ddlRace.SelectedValue + "', [FirstGeneration] ='" + ddlFirstGeneration.SelectedValue + "', [Disabilities] ='" +
+                        ddlDisabilities.SelectedValue + "', [TypeDisabilities] = '" + ddlTypeDisabilities.SelectedValue + "', [Veteran] ='" + ddlVeteran.SelectedValue + "', [Other] ='" + txtOther.Text + "', [Extrovert] ='" +
+                        ddlExtrovert.SelectedValue + "', [Emotional] = '" + ddlEmotional.SelectedValue + "', [Leader] ='" + ddlLeader.SelectedValue + "', [Detail] ='" + ddlDetail.SelectedValue + "', [Quiet] ='" +
+                        ddlQuiet.SelectedValue + "', [Friends] = '" + ddlFriends.SelectedValue + "', [Athletics] ='" + ddlAthletics.SelectedValue + "', [Games] = '" + ddlGames.SelectedValue + "', [Music] ='" +
+                        ddlMusic.SelectedValue + "', [Activity] ='" + ddlActivity.SelectedValue + "', [Food]='" + ddlFood.SelectedValue + "', [Time] ='" + ddlTime.SelectedValue + "', [Covid]='" + ddlCovid.SelectedValue + "', [Opportunity]='" +
+                        ddlOpportunity.SelectedValue + "', [Hours] = '" + ddlHours.SelectedValue + "', [Study] ='" + ddlStudy.SelectedValue + "', [StudyTime] = '" + ddlStudyTime.SelectedValue + "', [Internship] = '" +
+                        ddlInternship.SelectedValue + "', [Where] ='" + txtWhere.Text + "', [Dream] ='" + txtDream.Text + "', [Company] ='" + ddlCompany.SelectedValue + "', [Industry] ='" + ddlIndustry.SelectedValue + "', [Hobby] ='" +
+                        txtHobby.Text + "', [Why] = '" + txtWhy.Text + "', [Program] = '" + txtProgram.Text + "', [Choose] = '" + txtChoose.Text + "', [Orgs] ='" + txtOrgs.Text + "', [Success] = '" + txtSuccess.Text + "' where [UserID] ='" + user + "';";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    ClearFields();
+                    lblSubmit.Text = "Profile Updated!";
+                }
+            }
+
+        }
 
 
 

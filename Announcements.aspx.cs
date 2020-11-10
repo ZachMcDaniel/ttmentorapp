@@ -16,11 +16,11 @@ using System.Web.UI.WebControls;
 
 
 
-namespace CaseCompetitionApp
+namespace MentorAppFinal
 
 {
 
-    public partial class News : System.Web.UI.Page
+    public partial class Announcements : System.Web.UI.Page
 
     {
 
@@ -50,7 +50,7 @@ namespace CaseCompetitionApp
 
             {
 
-                //empty.Visible = true;
+                empty.Visible = true;
 
             }
 
@@ -60,7 +60,7 @@ namespace CaseCompetitionApp
 
             {
 
-                //empty.Visible = false;
+                empty.Visible = false;
 
             }
 
