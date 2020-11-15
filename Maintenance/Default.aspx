@@ -119,7 +119,7 @@
 
     <div class ="col-sm-4">
             <h3>Users without Roles</h3>
-        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource5" HeaderStyle-CssClass="centerHeaderText">
+        <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource6" HeaderStyle-CssClass="centerHeaderText">
             <Columns>
                
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
@@ -134,7 +134,7 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Email FROM [AspNetUserRoles] INNER JOIN AspNetRoles ON AspNetUserRoles.RoleId = AspNetRoles.Id INNER JOIN AspNetUsers ON AspNetUserRoles.UserId = AspNetUsers.Id WHERE (AspNetRoles.Name = 'member')"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Email FROM AspNetUsers WHERE Id NOT IN (SELECT UserID FROM AspNetUserRoles)"></asp:SqlDataSource>
             <br />
         </div>
 
