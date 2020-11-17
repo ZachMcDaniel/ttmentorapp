@@ -48,8 +48,8 @@
                                 &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"></asp:LinkButton>
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton>
-                                &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" OnClientClick="return confirm('Are you sure you want to delete team?');" CommandName="Delete" Text="Delete"></asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton>
+                                &nbsp;<asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" OnClientClick="return confirm('Are you sure you want to delete team?');" CommandName="Delete" Text="Delete"></asp:LinkButton>
                             </ItemTemplate>
                             <HeaderStyle CssClass="center" />
                         </asp:TemplateField>
